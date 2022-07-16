@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="shortcut icon" href="mundo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header2">
+        <h1 class="logo"><span>TRAVEL©</span></h1>
+        <nav class="menu_nav" id="menu_nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#contato">Contatos</a>
+        </nav>
+    </header>
+        <main class="main2">
+            <div class=" container2">
+                    <form action="contato.php" method="post" class="form">
+                        <fieldset>
+                            <label for="nome">Insira seu nome:</label><br>
+                            <input type="text" placeholder="Insira seu nome" required name="nome" id="nome"> <br><br>
+                            <label for="idade">Insira sua idade:</label><br>
+                            <input type="number" placeholder="Insira sua idade" required  name="idade" id="idade"> <br><br>
+                            <label for="idade">Insira seu email:</label><br>
+                            <input type="email" placeholder="Insira seu email"  required name="email" id="email"> <br><br>
+                            <label for="idade">Insira local da viagem:</label><br>
+                            <input type="text" placeholder="Insira local" list="estado" required name="local" id="local"><br><br>
+                            <datalist id="estado" name="local" id="local">
+                                <option value="">Estados:</option>
+                                <option value="Chapada dos Veadeiros">MG</option>
+                                 <option value="Rio de Janeiro">RJ</option>
+                                 <option value="Santa Catarina">SC</option>
+                                 <option value="Fernado de Noronha">PB</option>
+                            </datalist><br>
+                            <label for="idade">Insira data  e hora da viagem:</label><br>
+                            <input type="datetime-local"required name="data_e_hora" id="data_e_hora"> <br><br>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+            </div>
+         </main>
+    <footer class="footer2">
+        <p>sigam nossas redes sociais:</p><br>
+        <li class="icons"><a href="https://github.com/onlyLuiz/onlyLuiz"><i class="fab fa-github"></i></a></li>
+        <li class="icons"><a href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li class="icons"><a href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a></li>
+        <li class="icons"><a href="https://twitter.com/twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="icons"><a href="https://www.tiktok.com/login?lang=pt-BR"><i class="fab fa-tiktok"></i></a></li>
+    </footer> 
+  </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</body>
+</html>

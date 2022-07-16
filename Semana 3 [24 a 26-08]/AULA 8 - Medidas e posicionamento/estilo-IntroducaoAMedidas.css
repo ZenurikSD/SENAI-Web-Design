@@ -1,0 +1,61 @@
+/* Aparência geral do site e elementos iniciais? */
+
+.corpo{
+    font: 12px Atkinson Hyperlegible, Roboto, Arial;
+    font-size: 12pt; 
+    background-color: #E8E9EC;
+    color: #33374C;
+    /*Centralizando o conteúdo*/
+     display: grid;
+     grid-template-columns: 80vw;
+     justify-content: center; }
+
+h1{
+    margin-bottom: 5px;}
+    #referencia{
+        font-size: 10pt;
+        margin-top: 0; }
+
+/* Elementos compartilhados */    
+.principal{
+    font-size: 14pt; }
+
+code{
+    font-weight:200;
+        background-color: rgba(5, 5, 5, 0.171);
+        border-radius: 2px;
+    padding: 0 3px 0 3px;}
+
+/* Elementos Individuais */
+#paragrafoPixel{
+    font-size: 14px;}
+
+#paragrafoPoint{
+    font-size: 14pt;}
+
+#paragrafoPolegada{
+    font-size: 0.14in;}
+
+#paragrafoCentimetro{
+    font-size: 1,4cm;}
+
+#paragrafoEM{
+    font-size: 1.4em;}
+
+#paragrafoREM{
+    font-size: 1.4rem;}
+
+#paragrafoPor100{
+    font-size: 84%;}
+
+#paragrafoVpWidth{
+    font-size: 2.4vw;}
+
+#paragrafoVpHeight{
+    font-size: 2.4vh;}
+
+#paragrafoVpMin{
+    font-size: 2.4vmin;}
+
+#paragrafoVpMax{
+    font-size: 2.4vmax;}

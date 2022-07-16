@@ -1,0 +1,75 @@
+﻿BANCO DE DADOS SQL
+
+	- Uma coleção estruturada e organizada de informações (dados) pode ser definido como um banco de dados. Atualmente o linguagem de consulta ao banco de dados mais utilizada é a linguagem de consulta estruturada (SQL) que permite inserir, consultar, alterar ou excluir os dados existente no banco de dados.
+
+	- Tipos de estruturas de Banco de Dados
+		- Bancos de dados relacionais: organizados como um conjunto de tabelas com colunas e linhas, com tecnologia que permite acessar informações estruturadas de forma mais eficiente e organizada.
+		- Bancos de dados orientados a objetos: as informações são representadas na forma de objetos, como na programação orientada a objetos.
+		- Bancos de dados distribuídos: consiste em dois ou mais arquivos localizados em sites diferentes. O banco de dados pode ser armazenado em vários computadores, localizados no mesmo local físico ou espalhados por diferentes redes.
+		- Data warehouses: é um tipo de banco de dados projetado especificamente para consultas e análises rápidas definido em um repositório central de dados.
+		- Bancos de Dados NoSQL: é um tipo de banco de dados não relacional, permite que dados não estruturados e semiestruturados sejam armazenados e manipulados sem a necessidade de relacionaciomento entre tabelas. Os bancos de dados NoSQL se tornaram populares à medida que os aplicativos web se tornaram mais comuns e mais complexos.
+
+	- O significado de OLTP e OLAP para Banco de Dados
+		- OLTP ou Online Transaction Processing (Processamento de Transações Online, em português) serve para designar os sistemas operacionais com dados transacionais, processando dados dos diversos sistemas com informações variadas da companhia, em resumo, este foca:
+			- nos níveis operacionais de um negócio, ou seja, a execução das operações no dia a dia.
+			- tem uma velocidade superior no processamento e uso dos dados operacionais, sem muita eficiência na análise para deliberações administrativas.
+			- possuem um sistema estruturado que serve como o repositório das informações abundantes.
+			- armazenamento em bancos de dados mais convencionais tipos relacionados ou orientado a objetos
+			- recomendado para uso de armazenamento de diversas áreas operacionais de um empreendimento
+
+		- OLAP ou Online Analytical Processing (Processamento Analítico Online), é uma habilidade para executar dentro do Data Warehouse e realizar análises dos grandes volumes de dados, contribuindo com as atividades para visualização das informações gerenciais e dá suporte para as funções de análises do negócio organizacional, em resumo, este foca:
+			- em serviços gerenciais, com o objetivo estratégico de uma instituição, de modo a servir como base informativa para as tomadas de decisões de analistas e gestores responsáveis por tomarem decisões estratégicas.
+			- otimiza os relatórios e a produção de análises automatizadas, para melhorar a capacidade de leitura dos gestores antes da tomada de decisão.
+			- A modelagem dimensional com base criadas em estrutura de dados do tipo "Data Warehouse", capaz de otimizar a performance com extensos volumes de informações.
+
+
+ 	- O significado do DBMS
+
+		- O DBMS (Sistema de Gerenciamento de Banco de Dados, em português) serve como uma interface entre o banco de dados e seus usuários finais ou programas, permitindo que os usuários recuperem, atualizem e gerenciem como as informações são organizadas e otimizadas, facilitando a supervisão e o controle de bancos de dados, permitindo uma variedade de operações administrativas, como monitoramento de desempenho, ajuste e backup e recuperação. Alguns exemplos de softwares de DBMSs são MySQL, MariaSQL, Microsoft Access, Microsoft SQL Server, FileMaker Pro, Oracle Database e dBASE.
+
+	- O Significado do SQL
+		- SQL significa Standard Query Language, ou seja, linguagem padrão para realizar consultas nos principais bancos de dados relacionais, tais como Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre muitos outros.
+		- A linguagem SQL é dividida em 4 agrupamentos de acordo com o tipo de operação a ser executada no banco de dados:
+			- DDL (Data Definition Language, ou Linguagem de Definição de Dados em português)
+				- Utilizado para gerenciar a estrutura do banco de dados. Com a DDL pode criar, alterar e remover objetos (tabelas, funções, etc.) no banco de dados.
+
+					- CREATE: Criar objetos no banco de dados.
+						CREATE TABLE nomeTabela ( ID INT PRIMARY KEY, NOME VARCHAR(50));
+					- ALTER: Alterar a estrutura de um objeto.
+						ALTER TABLE nomeTabela ADD novocampo CHAR(1); (adicionar um campo em uma tabela existente)
+					- DROP: Remover um objeto do banco de dados.
+						DROP TABLE nomeTabela; (remover tabela)
+
+			- DML (Data Manipulation Language, ou Linguagem de Manipulação de Dados e português)
+				- Utilizado para operar sobre os registros dos bancos de dados com instruções de inserção, atualização, exclusão e consulta de informações.
+					- INSERT: Inserir registros na tabela.
+						INSERT into nomeTabela(ID, NOME) values(1,'José');
+					- UPDATE: Alterar valores de uma ou mais linhas na tabela.
+						UPDATE nomeTabela set NOME = 'João'  WHERE ID = 1;
+					- DELETE: Excluir um ou mais registros de uma tabela.
+						DELETE FROM nomeTabela WHERE ID = 1;
+					- SELECT: O principal comando da SQL, permite fazer uma consulta no banco de dados
+						- Comando para consultar todos os registros
+							- SELECT * FROM nomeTabela;
+						- Comando para consultar com um filtro em relação a algum campo
+							- SELECT * FROM nomeTabela WHERE campo sinal de comparação valor;
+								(sinal de comparação > maior, < menor, >= maior ou igual, <= menor ou igual, =! diferente)
+						- Comando para consultar com ordenação por um campo 
+							- SELECT * FROM nomeTabela ORDER BY campo;
+	
+			- DCL (Data Control Language, ou Linguagem de Controle de Dados em português) 
+				- Utilizado para controlar o acesso aos dados, basicamente com dois comandos que permite ou bloqueia o acesso de usuários a dados.
+					- GRANT: Autoriza um usuário a executar alguma operação.
+						- GRANT select ON cliente TO carlos; (dar permissão de consulta na tabela cliente para o usuário carlos)
+					- REVOKE: Restringe ou remove a permissão de um usuário executar alguma operação.
+						- REVOKE CREATE TABLE FROM carlos; (não permitir que o usuário carlos crie tabelas no banco de dados)
+
+			- DTL (Data Transaction Language, ou Linguagem de Transação de Dados em português).
+				- Fornece mecanismos para controlar transações no banco de dados, os três comandos em média são executados de forma automática pelo gerenciador do banco de dados. 
+					- BEGIN TRANSACTION: iniciar uma transação
+					- COMMIT: efetivar as alterações no banco de dados 
+					- ROLLBACK: cancelar as alterações.
+
+
+
+		- 

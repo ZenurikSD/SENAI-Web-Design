@@ -1,0 +1,49 @@
+html{
+	background-color: #252525;
+}
+body{
+	font: 12pt Cascadia Code, Consolas, monospace;
+	color: #e5ece5;
+	/*Grid*/
+	display: grid;
+	grid-template-columns: 80vw;
+	justify-content: center; }
+
+body > header, main, section{
+	background-color: #2f3131;
+	box-shadow: 0 0 16px #0000006c;
+	border-radius: 8px;
+	padding: 12px; 
+	margin: 6px 0;}
+
+form{
+	display: flex; 
+	justify-content: center;
+	min-width: fit-content;
+}
+	fieldset{
+		border: 3px solid #bdb651; }
+
+
+input, button{
+	width: max-content;
+	color: #e5ece5;
+	background-color: unset;
+	font: inherit;
+	padding: 4px;
+	border: unset;
+	border-radius: 3px;
+	border-bottom: 2px solid #51bdb8;
+}
+button{
+	background-color: #3c3f3f;  }
+button:hover, input:hover{
+	background-color: #4d5050;
+}
+
+li{
+	margin: 0 16px;
+	opacity: 0.70;
+}
+
+/*Meu CSS tá uma bagunça, não estou tendo tempo para trabalhar melhor nele.*/

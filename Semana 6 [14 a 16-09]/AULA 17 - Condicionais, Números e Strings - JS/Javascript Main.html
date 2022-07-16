@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="jsMain-Style.css">
+</head>
+
+
+<body>
+   <!--Cabeçalho ==================================================== -->
+   <header class="header">
+	 <figure class="jsLogo">
+	 <img class="jslogo" src="jslogo.png" alt="logo JS" width="50px" height="50px"> </figure>
+
+	 <h2>Arquivo-Mestre {Javascript}</h2>
+    A cada aula vou expandir no que puder explicando os conceitos do JS e programação
+
+   </header>
+
+	<main>
+		<p>O Javascript é a linguagem de programação usada para programar o 
+		comportamento e adicionar funções às páginas web. Existem vários termos
+		estranhos que é preciso se familiarizar primeiro para entender a linguagem;
+		mas você vai ver que com a perspectiva certa, não é nada difícil.
+		</p>
+		<p><i>"O Javascript é composto de métodos que alteram as funções, classes e
+		objetos" </i></p>
+
+	</main>
+
+   <!--Semáforo ===================================================== -->
+   <section class="main">
+      <h3>Exercício semáforo</h3>
+
+      <section class="flexContainer">
+
+        <div class="borda">
+        <button class="botao" id="vermelho"
+                onclick="window.document.getElementById('vermelho')
+                        .style.backgroundColor = '#CC1900' " 
+                onmouseleave="window.document.location.reload()"> PARE
+        </button>
+
+        <button class="botao" id="amarelo"
+                onclick="window.document.getElementById('amarelo')
+                        .style.backgroundColor = '#CCBE00' "
+                onmouseout="window.document.location.reload()"> ATENÇÃO
+        </button>
+
+        <button class="botao" id="verde"
+                onclick="window.document.getElementById('verde')
+                        .style.backgroundColor = '#05CC00' " 
+                onmouseout="window.document.location.reload()"> VÁ
+        </button></div>
+
+        <p>Clicar "acende" e tirar o mouse "apaga" (recarrega a página, o que é 
+			meio cursed, mas não achei um método melhor).</p>
+
+      </section>
+      
+   </section>
+
+   <!--Eventos ====================================================== -->
+   <section>
+       <h3>Eventos</h3>
+       <p>Modificar elementos quando algo acontece. Por exemplo, quando o usuário
+        clicar, tocar, passar o mouse em cima etc.. <br>
+        É qualquer atributo que começa com "on-":</p>
+
+        <p id="paragrafo1"
+           onmouseover="window.document.getElementById('paragrafo1').innerHTML = 'Olár' "> 
+           <code>onmouseover</code> Passa o mouse aqui
+       </p>
+
+   </section>
+
+   <!--DOM ============================================================= -->
+   <section>
+        <H2>Estrutura DOM (Document Object Model)</H2>
+        O DOM é responsável por "traduzir" os elementos HTML em objetos e propriedades
+        que o Javascript é capaz de interpretar, permitindo modificá-los.
+   </section>
+
+   <!--Funções ======================================================== -->
+   <section>
+		<h2>Funções!</h2>
+		<p>Apesar do nome assustar um pouco, funções são blocos de código isolados, 
+		que só executam quando são chamadas</p>
+		
+		<p>Sintaxe: <br/>
+		<code>function</code> Declara que è uma função.
+		Seguido do nome da função, você usa parênteses
+		para definir argumentos, mas no início ela vai 
+		estar vazia mesmo </p>
+		
+   </section>
+
+   <!--Condicionais =================================================== -->
+   <section>
+	   <h2>Condicionais</h2>
+	   <p><i>"Os comandos condicionais servem para automatizar processos, são eles:
+		<code>if</code>, <code>else</code>, <code>else if</code> e <code>switch</code>. </i></p>
+
+		<div id="div1">
+			<form action="" method="post">
+
+				<input type="number" id="notaDoUser" 
+				placeholder="Qual nota você tirou?">
+				<button type="button" id="btForm" onclick="notas()"> Enviar </button>
+
+			</form>
+
+			<p id="pa1">Resultado vem aqui</p>
+		</div>
+
+		Usar o <code>else if</code> ao invés de <code>else</code> serve para acrescentar mais
+		condições. Um <code>else</code> comum não tem condição, ele se aplica quando todo o resto
+		for falso.
+
+		<script>			
+		function notas(){
+			//Variável 'nota' pega o valor do elemento com a #id selecionada
+			var nota = window.document.querySelector('#notaDoUser').value
+
+			//if(condição){forVerdadeira:dêUmValor}
+			if(nota >= 7 && nota <= 10){
+				window.document.querySelector('#pa1').innerHTML 
+				= `Parabéns, você tirou ${nota} e está aprovado!`
+			}
+			//else if(outraCondicao){dêOutroValor}
+			else if(nota < 7 && nota >= 3){
+				window.document.querySelector('#pa1').innerHTML
+				= `Atenção, sua nota foi de ${nota}, você fará recuperação da matéria.`
+			} 
+			//else if(maisUmaCondição){dêMaisUmValor}
+			else if(nota <3 && nota >= 0){
+				window.document.querySelector('#pa1').innerHTML
+				= `Infelizmente, com uma nota de ${nota} você será reprovado.`
+			}
+			//else{forFalsa:dêOutrovalor}
+			else{
+				window.document.querySelector('#pa1').innerHTML
+				= `Insira um valor de 0 a 10`
+			}
+		}
+		</script>
+
+   </section>
+
+
+</body>
+
+</html>

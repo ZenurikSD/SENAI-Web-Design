@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alisson Silva">
+    <meta name="copyright" content="none">
+
+    <title> Propriedade display</title>
+
+    <link rel="stylesheet" href="estilo- displayPosElem.css">
+</head>
+
+
+<body class="corpo">
+
+    <!--Cabeçalho ============================================================= -->
+    <header class="header bordaGlobal">
+     <h1> Posicionamento de elementos </h1>
+     <h2>Parte 2 - Propriedade <code>display</code> </h2>
+     <p id="paragrafoHeader"> 
+      <u id="aula">Aula 9</u> <i>Há mais detalhes sobre os atributos no código.</i></p>
+    </header>
+
+
+    <!--Navegação ============================================================== -->
+    <nav class="navegacao bordaGlobal">
+
+     <h3 class="listaNav"> NAV </h3>
+     <dl class="listaNav"> <!--Lista de definição porquê não tem os marcadores-->
+       <dt class="itemNav"> <a href="../AULA 8 - Medidas e posicionamento/Pos. de Elem. - Position.html">
+         Voltar à parte 1</a> </dt>
+       <dt class="itemNav"> Item 2 </dt>
+       <dt class="itemNav"> Item 3 </dt>        
+    </dl>
+
+    </nav>
+
+
+    <!--Principal ============================================================== -->
+    <main class="main bordaGlobal">
+     <H3> MAIN </H3>
+     <p> A propriedade <code>display</code> define a <em>diagramação</em>, que é a 
+     forma como os elementos serão organizados e exibidos, ela define o seu 
+     <u>layout</u>.</p>
+
+     
+     <p>Para entender melhor, em CSS, todas as coisas têm uma caixa ao redor delimitando
+     onde começam e terminam, desde grandes elementos até cada caractere em um texto.
+     Isso se chama de "Box Model". </p>
+     <section class="imgFlex">
+     <img id="imagem1" src="boxModel.PNG" alt="Diagrama do box model">
+     </section>
+
+     <!-- Display Externo =============================== -->
+     <h4>Display do tipo externo - Flow Layout</h4>
+     <p>As características básicas: <b>block</b> e <b>inline</b>, formam o layout 
+     <u>Flow</u> e definem como o objeto irá se comportar em relação ao lado 
+     <b>externo</b> da caixa. </p>
+
+     <section class="subsecao1 bordaGlobal">
+      <p>De forma simples, isso altera a direção de como os elementos <em>fluem</em>
+      na página, a orientação deles:
+        <ul>
+        <li>Vertical ( <code>block</code>, um abaixo do outro) ou </li>
+        <li>Horizontal ( <code>inline</code>, um ao lado do outro).</li>
+        </ul>
+     </section> 
+
+     <!-- Propriedades básicas =================================================== -->
+     <section class="secao bordaGlobal">
+      <h3>Propriedades básicas</h3>
+
+      <section class="bordaGlobal">
+      <p>Esta é uma sub-seção utilizando o <code>display: block</code>. Como ele é
+      o valor padrão de muitos elementos, nada precisa ser alterado.</p>
+      </section>
+
+      <section class="subS-inline bordaGlobal">
+      <p>Esta é uma sub-seção utilizando o <code>display: inline</code>. Eu não 
+      consigo explicar porquê quebra a borda, mas o próximo exemplo arruma.</p>
+      </section><br>
+
+      <section class="subS-inlineBlock bordaGlobal">
+      <p>Esta é uma sub-seção utilizando o <code>display: inline-block</code>.</p>
+      </section> 
+     </section>
+
+     <!-- Display Interno =============================== -->
+     <h4>Display do tipo interno</h4>
+     <p> No lado <b>interno</b> do display, os atributos definem como os elementos
+     DENTRO da caixa vão ser dispostos e é aqui que fica interessante: </p>
+
+     <section class="subsecao2 bordaGlobal">
+      <p>Nele é possível alterar como os filhos de um elemento serão
+      dispostos, por exemplo:
+        <ul>
+          <li><code>display: table</code> - É possível criar tabelas, com todas as funções
+              presentes na tag &lt;table&gt; do HTML.</li>
+          <li><code>display: list-item</code> - Cria uma lista, e também substitui as 
+              funções presentes nas tags de lista.</li>
+        </ul>
+     </p>
+     </section>
+    </main>
+
+    
+    <!--Flexbox =================================================================== -->
+    <section class="flexboxMain bordaGlobal">
+      <H3>Layout Flexbox - <code>display: flex</code></H3>
+
+      <p>O Flexbox é um método de layout unidimensional para arranjar itens em linhas
+      <u>ou</u> colunas. Os objetos (itens, elementos, tanto faz) literalmente 
+      flexionam: expandem para preencher espaço adicional ou encolhem para caber em
+      espaços menores.
+      </p>
+
+      <section class="flexboxConteiner">
+        <article class="artigoFlex bordaGlobal">
+          <p>Esses três artigos por padrão aparecem um abaixo do outro, seguindo o
+          atributo <code>block</code> definido por ele mesmo. Mas agora não 
+          é assim que estão aparecendo 🤔
+          </p>
+        </article>
+
+        <article class="artigoFlex bordaGlobal">
+          <p>Como o <code>flex</code> define um layout INTERNO, para habilitar ele
+          nesses artigos precisamos colocar a propriedade <code>display: flex</code>
+          na seção pai. Esse pai é conhecido como um <code class="var1">flexContainer</code>,
+          e seus elementos filhos como <code class="var1">flexItems</code>. 
+          Você pode dar esses nomes para as classes deles, assim você dá um propósito 
+          diferente a um contêiner genérico como o &lt;section&gt; ou &lt;div&gt;.</p>
+        </article>
+
+        <article class="artigoFlex bordaGlobal">
+          <p>"Para reiterar, o elemento que demos o valor de <code>flex</code> está
+          se comportando como um elemento do tipo <u>block</u> em relação à como
+          ele interaje com o resto da página; mas seus filhos estão dispostos como
+          itens <u>flex</u>."</p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#specifying_what_elements_to_lay_out_as_flexible_boxes"
+                target="self">MDN Web Docs - Flexbox</a></p>
+        </article>
+      </section>
+
+    </section>
+
+
+    <!--Grid ==================================================================== -->
+    <section class="gridMain bordaGlobal">
+      <p id="pAula"><u id="aula">Aula 10</u> <u id="aula">31/08</u></p>
+      <h3>Layout Grid - <code>display: grid</code></h3>
+      <p>O grid é um layout <em>interno</em> que cria grades para separar e dispor
+      os elementos, trabalhando muito com as propriedades 
+      <code class="var1">justify-content</code> e <code class="var1">align-items</code>
+      para refinar o alinhamento e espaçamento vertical e horizontal entre as grades.</p>
+
+      <section class="gridConteiner">
+        <article id="caixa1" class="bordaGlobal"> Caixa 1</article>
+        <article id="caixa2" class="bordaGlobal"> Caixa 2</article>
+        <article id="caixa3" class="bordaGlobal"> Caixa 3</article>
+        <article id="caixa4" class="bordaGlobal"> Caixa 4</article>
+        <article id="caixa5" class="bordaGlobal"> Caixa 5</article>
+        <article id="caixa6" class="bordaGlobal"> Caixa 6</article>
+        <article id="caixa7" class="bordaGlobal"> Caixa 7</article>
+        <article id="caixa8" class="bordaGlobal"> Caixa 8</article>
+        <article id="caixa9" class="bordaGlobal"> Caixa 9</article>
+      </section>
+
+      <p>Sobre utilizar várias células, você pode definir em cada elemento a coordenada
+      onde ele irá começar e onde irá terminar, com o 
+      <code>grid-column/row: start end</code>.</p>
+
+      <h4>Exemplo de grade</h4>
+
+      <p>Essa é uma grade 3x7, diagramada da seguinte forma:</p>
+
+      <section class="gridConteiner2">
+        <article id="caixaA" class="borda2"> Caixa A</article>
+        <article id="caixaB" class="borda2"> Caixa B</article>
+        <article id="caixaC" class="borda2"> Caixa C</article>
+        <article id="caixaD" class="borda2"> Caixa D</article>
+        <article id="caixaE" class="borda2"> Caixa E</article>
+      </section><br>
+
+      <h2>Acaba aqui!</h2>
+      <p>Por mais que eu esteja gostando de usar essa página, acho melhor criar uma 
+      dedicada para o Grid e outra para Flexbox para explicar eles em mais detalhe.
+      </p><br>
+    </section>
+
+
+    <!--Apoio ====================================================================== -->
+    <aside class="apoio bordaGlobal">
+    <p> ASIDE </p>
+    </aside>
+
+
+    <!--Rodapé ===================================================================== -->
+    <footer class="rodape bordaGlobal">
+     <H3> FOOTER </H3>
+     <ul> 
+        <li> Item A</li>
+        <li> Item B</li>
+        <li> Item C</li>
+     </ul>
+    </footer>
+
+
+</body>
+
+</html>

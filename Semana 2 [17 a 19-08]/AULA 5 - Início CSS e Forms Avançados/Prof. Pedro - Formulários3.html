@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 3</title>
+</head>
+<body>
+    <form action="/Users/Suporte/Desktop/teste.txt" method="get">
+        <!--A tag FIELDSET insere um bloco de dados-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <input type="text" name="nome"
+            id="nome" placeholder="Insira seu nome"><br>
+            
+            <input type="email" name="email"
+            id="email" placeholder="Insira seu email"><br>
+            
+            <input type="password" name="pass"
+            id="pass" placeholder="Insira sua senha"><br>
+            
+            <input type="tel" name="tel"
+            id="tel" placeholder="Insira seu telefone"><br>
+            
+            <button type="submit">ENVIAR</button><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+            Forma de Contratação: <br>
+            <input type="radio" name="reg"
+            id="reg"> REGISTRADO
+            
+            <input type="radio" name="con"
+            id="con">CONTRATADO <br><br>
+
+            Cargo:
+            <select name="cargo" id="cg">
+                <option value="Estagiário">ESTAGIÁRIO</option>
+                <option value="Analista">ANALISTA</option>
+                <option value="GERENTE">GERENTE</option>
+            </select><br><br>
+            <legend>Informe sua vontade de trabalhar</legend>
+            0<input type="range" name="vontade"
+            id="vt" min="0" max="100">100
+            
+        </fieldset>
+    </form>
+</body>
+</html>

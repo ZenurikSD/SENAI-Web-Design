@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <!--Vamos criar arrays 'vetores'-->
+    <p class="par" id="par1"></p>
+    <p class="par" id="par2"></p>
+    <p class="par" id="par3"></p>
+
+    <script>
+        //arrays são conjuntos de valores em uma mesma variável, por definição TODO array é um objeto
+        const carros = ['Ford', 'VolkWagen', 'General Motors']//os colchetes [] definem o array
+        const frutas = ['Maça', 'Pera', 'Laranja', 'Uva', 'Limão']
+        const mfrutas = frutas.slice(1,2)
+
+        //window.document.querySelector('#par1').innerHTML = `O array é: ${carros}, e o seu tipo é: ${typeof(carros)}`
+
+
+        /*Métodos a serem aplicados*/
+
+        // .toString() transforma o array em string
+        //window.document.querySelector('#par1').innerHTML = `Os carros são: ${carros.toString()}, e o seu tipo é: ${typeof(carros.toString())}`
+
+        // .pop() retira o último elemento do array
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `O método .pop() retirará o último elemento: ${carros.pop()}`
+        //window.document.querySelector('#par3').innerHTML = `Agora o array é: ${carros}`
+
+        // .push() insere um elemento na última posição do array
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `O método .push() inserirá um elemento na última posição: ${carros.push('Fiat')}`
+        //window.document.querySelector('#par3').innerHTML = `Agora o array é: ${carros}`
+
+        // .shift() retira o primeiro elemento do array
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `O método .shift() retirará o primeiro elemento: ${carros.shift()}`
+        //window.document.querySelector('#par3').innerHTML = `Agora o array é: ${carros}`
+
+        // .unshift() insere um elemento na primeira posição do array
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `O método .unshift() inserirá um elemento na posição inicial: ${carros.unshift('Dodge')}`
+        //window.document.querySelector('#par3').innerHTML = `O novo array é: ${carros}`
+
+        // SINTAXE: array[posição] = 'novo elemento', troca o elemento da posição dada, pelo novo elemento
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `Mudarei a posição 1 para: ${carros[1] = 'Fiat'}`
+        //window.document.querySelector('#par3').innerHTML = `O novo array é: ${carros}`
+
+        // SINTAXE: delete array[posição], deletará o elemento da posição dada
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `Deletarei o elemento da posição 1: ${delete carros[1]}`
+        //window.document.querySelector('#par3').innerHTML = `O novo array é: ${carros}`
+
+        // .splice(índice início, elementos excluídos, 'novos elementos') insere elementos na posição desejada e retira, se for pedido, elementos anteriores
+        //window.document.querySelector('#par1').innerHTML = `O array original é: ${carros}`
+        //window.document.querySelector('#par2').innerHTML = `O método .splice() insere elementos: ${carros.splice(1,0,'Fiat', 'Dodge')}`
+        //window.document.querySelector('#par3').innerHTML = `O novo array é: ${carros}`
+
+        // .concat() concatena arrays
+        //window.document.querySelector('#par1').innerHTML = `Temos o array [${carros}] e o array [${frutas}]`
+        //window.document.querySelector('#par2').innerHTML = `O método .concat() concatena arrays ${carros.concat(frutas)}`
+        //window.document.querySelector('#par3').innerHTML = `Agora temos um único array que é: [${carros.concat(frutas)}]`
+
+        // .slice(posição) retira o elemento da posição dada
+        //window.document.querySelector('#par1').innerHTML = `O array original é: [${frutas}]`
+        //window.document.querySelector('#par2').innerHTML = `O método .slice() retira o elemento da posição dada: `
+        //window.document.querySelector('#par3').innerHTML = `O novo array é: [${mfrutas}]`
+
+        // .sort() deixa em ordem alfabética - por default é para ser usado em strings
+        //window.document.querySelector('#par1').innerHTML = `O array original é: [${frutas}]`
+        //window.document.querySelector('#par2').innerHTML = `O novo array será: [${frutas.sort()}]`
+
+        // .reverse() inverte as posições do array
+        //window.document.querySelector('#par1').innerHTML = `O array original é: [${frutas}]`
+        //window.document.querySelector('#par2').innerHTML = `O novo array será: [${frutas.reverse()}]`
+    </script>
+</body>
+</html>

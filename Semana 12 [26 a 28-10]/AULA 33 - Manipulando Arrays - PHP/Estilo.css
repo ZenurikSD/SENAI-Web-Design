@@ -1,0 +1,81 @@
+html{
+	background-color: #252525;
+}
+
+h2{
+	color: #bda951;
+}
+h1, h2, h3, h4{
+	margin: 12px 0;
+}
+
+.borda1{
+	border: 3px solid #bd5551; 
+}
+.borda2{
+	border: unset;
+	border-radius: 3px;
+	border-bottom: 2px solid #bd5551;
+}
+body{
+	font: 12pt Segoe UI, Roboto, Arial;;
+	color: #e5ece5;
+	/*Grid*/
+	display: grid;
+	grid-template-columns: 80vw;
+	justify-content: center; }
+
+body > header, main, section{
+	display: flex; 
+	flex-direction: column;
+	justify-content: center; 
+	align-self: center;
+	background-color: #2f3131;
+	box-shadow: 0 0 16px #0000006c;
+	border-radius: 8px;
+	padding: 12px; 
+	margin: 6px 0;}
+
+	fieldset{
+		width: min-content;}
+
+
+input, button{
+	margin: 12px;
+	color: #e5ece5;
+	background-color: unset;
+	font: inherit;
+	padding: 4px;
+}
+button{
+	background-color: #3c3f3f; }
+button:hover, input:hover{
+	background-color: #4d5050; }
+
+li{
+	margin: 0 16px;
+	opacity: 0.70;
+}
+
+a{ color: #3a94af; text-decoration: none; }a:hover{ color: #51bdb8 ;}
+
+blockquote{
+	background-color: unset;
+	padding: 3% 4vw;
+	margin: 2vmin;
+}
+
+.janela{
+	background-color: #3f424d;
+	opacity: 0.70;}
+
+#endCriado{
+	color: #51bdb8;
+}
+
+#voltar{
+	width: min-content;
+	align-self: center;
+}
+
+/*Meu CSS tá uma bagunça, não estou tendo tempo para trabalhar melhor nele.*/

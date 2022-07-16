@@ -1,0 +1,6 @@
+Nome: aaaa
+ 
+             E-mail: aaaa@aaaa.com
+
+             Mensagem: aaa
+Arquivo gerado pelo PHP, modo w+.

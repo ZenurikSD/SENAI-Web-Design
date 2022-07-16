@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR in e of</title>
+</head>
+<body>
+    <!--O loop for possui a seguinte sintaxe:
+        for (inicio; condição; incremento)
+        podemos fazer o loop de outras formas utilizando in e of-->
+    <p id="teste">TESTE</p>
+    <p id="teste2">TESTE</p>
+    <p id="teste3">TESTE</p>
+
+    <script>
+        //criando um objeto para fazer o loop
+        const pessoa = {
+            pnome: 'José',
+            snome: 'Silva',
+            idade: '50'
+        }
+
+        //fazendo o loop
+        let texto = ''
+        //SINTAXE for(variável in objeto){retorno}
+        for (let x in pessoa){
+            texto += `${pessoa[x]} `
+        }
+
+        window.document.querySelector('#teste').innerHTML = texto
+
+
+        //Criando um array
+        const frutas = ['maça', 'banana', 'laranja']
+
+        //fazendo o loop ITERÁVEL
+        let texto1 = ''
+        //SINTAXE for (variável of objeto){retorno}
+        for (let y of frutas){
+            texto1 += `${y} `
+        }
+
+        window.document.querySelector('#teste2').innerHTML = texto1
+
+        //Criando uma String
+        let linguagem = 'JavaScript'
+        
+        //fazendo o loop (o for of só funciona em objetos iteráveis!!!!)
+        let texto2 = ''
+
+        for (let z of linguagem){
+            texto2 += `${z}<br>`
+        }
+
+        window.document.querySelector('#teste3').innerHTML = texto2
+    </script>
+</body>
+</html>

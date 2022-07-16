@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Elements</title>
+</head>
+<body>
+    <!--A ideia é explorar o HTML DOM (Document Object Model)-->
+    <h1 class="tit" id="tit1">Olá Mundo!</h1>
+
+    <div class="dv" id="dv1">
+        <p class="par" id="p1">Primeiro Parágrafo</p>
+
+        <p class="par" id="p2">Segundo Parágrafo</p>
+
+        <p class="par" id="p3">Terceiro Parágrafo</p>
+
+        <p class="par" id="p4">Quarto Parágrafo</p>
+
+        <p class="par" id="p5">Quinto Parágrafo</p>
+
+        <p class="par" id="p6"></p>
+    </div>
+
+        <button id="btn1" 
+                type="button"
+                onclick="window.document.getElementById('dv1').style.backgroundColor = 'red'">VERMELHO</button>
+
+        <button id="btn1" 
+                type="button"
+                onclick="window.document.getElementById('dv1').style.backgroundColor = 'green'">VERDE</button>
+
+                <button id="btn1" 
+                type="button"
+                onclick="window.document.getElementById('dv1').style.backgroundColor = 'blue'">PADRÃO</button>
+
+    <script>
+        /*no HTML DOM os métodos são ações e as propriedades são valores*/
+        
+        // getElementById é o método que puxa o elemento por seu Id
+        // innerHTML é a propriedade que insere o valor preservando o html*
+        //window.document.getElementById('p1').innerHTML = 'Outro Parágrafo'
+
+
+        // getElementsByClassName é o método que puxa o elemento pela sua classe, lembre-se de informar a posição []
+        // innerHTML é a propriedade que insere o valor preservando o html*
+        //window.document.getElementsByClassName('par')[1].innerHTML = 'Outro outro Parágrafo'
+
+        // getElementsByTagName é o método que puxa o elemento por sua tag, lembre-se de informar a posição[]
+        // innerHTML é a propriedade que insere o valor preservando o html*
+        //window.document.getElementsByTagName('p')[2].innerHTML = 'Outro outro outro Parágrafo'
+
+
+        // querySelector é o método que puxa o elemnto por seu seletor CSS
+        // innerHTML é a propriedade que insere o valor preservando o html*
+        //window.document.querySelector('#p4').innerHTML = 'Outro outro outro outro Parágrafo'
+
+        // querySelectorAll é o método que puxa o elemento sendo dado seu caminho, lembre-se de informar a posição[]
+        // innerHTML é a propriedade que insere o valor preservando o html*
+        //window.document.querySelectorAll('p.par')[4].innerHTML = 'Outro outro outro outro outro Parágrafo'
+
+
+        // write é o método que insere um parágrafo no HTML
+        //window.document.write('Outro')
+
+
+
+        /*Trabalhando com estilos CSS*/
+
+        //a propriedade style modifica o estilo css do elemento escolhido
+        window.document.getElementById('dv1').style.backgroundColor = 'blue'
+        window.document.getElementById('dv1').style.alignItems = 'center'
+        window.document.getElementById('dv1').style.alignContent = 'center'
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilo-mestre-1.css">
+   <link rel="stylesheet" href="style-local.css">
+   <script src="scripts.js"></script>
+
+   <title>Alisson Silva</title>
+</head>
+
+<body>
+   <!--Principal ================================== -->
+   <main class="main flex_col">
+      <h2>Aula 52 - 15/12</h2>
+      <p><strong>Exportação de dados para SQL e XML</strong> (Preencha apenas um)</p>
+
+
+   <section class="cartao ">
+      
+      <!-- Produto de uma loja -->
+      <form action="export_SQL e XML.php" method="post">
+         <fieldset class="flex_col">
+         <legend>Produto</legend>
+         
+         <label for="txt">Nome do produto:</label>
+         <input type="text" name="produto" id="produto" required>
+
+         <label for="email">Preço</label>
+         <input type="number" name="preco" id="preco" min="1" required>
+
+         <label for="tel">Nome do Cliente:</label>
+         <input type="text" name="cliente" id="cliente" required>
+
+         <button type="submit">Enviar</button>
+         </fieldset>
+      </form>
+
+      <!--Contato -->
+      <form action="export_SQL e XML.php" method="post">
+         <fieldset class="flex_col">
+         <legend>Contato (Desabilitado: vars nulas)</legend>
+         
+         <label for="txt">Nome:</label>
+         <input type="text" name="nome" id="nome" required>
+
+         <label for="email">E-mail</label>
+         <input type="email" name="email" id="email" required>
+
+         <label for="tel">Número para contato:</label>
+         <input type="number" name="tel" id="tel" required>
+
+         <label for="nota">Endereço</label>
+         <input type="text" name="end" id="end" required>
+
+         <label for="nota">Estado:</label>
+         <input type="text" name="est" id="est">
+         
+
+         <button type="submit">Enviar</button>
+         </fieldset>
+      </form>
+   </section>
+
+   </main>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.jsLogo{
+    box-shadow: 3px 3px 0 #1d1c1c;
+    width: 50px;
+    height: 50px;
+    float: left; 
+    margin: 8px 10px 5px 10px;}
+
+body{
+    font: 11pt 'Atkinson Hyperlegible'; 
+    background-color:#e4e7e0; 
+    /*-------------Grid-------------*/
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;}
+    body > *{
+        border-radius: 6px;
+        box-shadow: -5px 5px 5px #2324242c;
+        background-color: #dfddd9;
+        color: #252525;
+        margin: 8px 8px;
+        padding: 5px 10px;
+        /*Propriedades flex*/
+        flex-basis: 40vw;
+        min-height: 150px;
+        min-width: 300px;
+        max-width: 450px;}
+    h2,h3{
+        margin-bottom: 8px;
+        margin-top: 4px; }
+    
+header{
+    margin: 0 0 4px 0;
+    position: sticky;
+    top: -4px; }
+
+code{
+    font: 400 10pt Cascadia Code;
+        background-color: #7ba15c65;
+        border-radius: 3px;
+    padding: 0 2px 0; /* top, horiz., bot*/
+    margin: 0 .007vw;}
+    .var1{
+        color: #191A1B;
+        background-color: #63e381bd; }

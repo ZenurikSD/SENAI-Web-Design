@@ -1,0 +1,26 @@
+body{
+    font: 11pt Arima Madurai; 
+    background-color: #f1f3f4;
+    /*Grid*/
+    display: grid;
+    grid-template-columns: 90vw;
+    max-width: fit-content;
+    justify-content: center;}
+
+.buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+    button{
+        grid-column: 1 / 2;
+        font: inherit;
+        font-size: 10pt;
+        padding: 2px;
+        margin: 4px 0;}
+
+body > .caixaTeste{
+    border: 2px solid #0f4c81;
+    margin: 8px 0;
+    padding: 5px;
+}

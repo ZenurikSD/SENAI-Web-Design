@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root{
+    --cor-principal: #36363644;
+    --cor-secundaria: #c0c0c0;
+    --fonte-principal: 'Roboto';
+}
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--cor-principal);
+}
+
+header{
+    background-color: var(--cor-secundaria);
+}
+
+nav{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal), sans-serif;
+}
+
+nav ul > li {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul > li:hover{
+    color: white;
+    background-color: var(--cor-principal);
+}
+
+main{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal), sans-serif;
+    min-width: 500px;
+    max-width: 900px;
+    margin: auto;
+}
+
+main figure > img{
+    min-width: 500px;
+    max-width: 900px;
+}
+
+section{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal), sans-serif;
+    min-width: 500px;
+    max-width: 900px;
+}
+
+section > h1{
+    text-align: center;
+}
+
+section > p{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+section ul > li{
+    display: inline-block;
+}
+
+section form fieldset > legend{
+    text-align: center;
+}
+
+section form > label, input, textarea, button{
+    padding: 10px;
+    display: inline-block;
+
+}
+
+footer{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal), sans-serif;
+}
+
+footer ul > li {
+    display: inline-block;
+    padding: 10px;
+}
+
+footer ul li > a{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li > a:hover{
+    color: white;
+    background-color: var(--cor-principal);
+}

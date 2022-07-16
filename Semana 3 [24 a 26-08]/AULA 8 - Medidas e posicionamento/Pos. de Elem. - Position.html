@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alisson Silva">
+    <meta name="copyright" content="none">
+
+    <title> Propriedade Position  </title>
+
+    <link rel="stylesheet" href="estilo-PosicionamentoDeElementos.css">
+</head>
+
+
+<body class="corpo">
+
+    <!--Cabeçalho ============================================================= -->
+    <header class="header bordaGlobal">
+     <h1> Posicionamento de elementos</h1>
+     <h2> Parte 1 - Propriedade <code>position</code></h2>
+     <p id="paragrafoHeader"> <u id="aula">Aula 8</u> <i>Há mais detalhes sobre os atributos 
+      no código.</i></p>
+    </header>
+
+
+    <!--Navegação ============================================================== -->
+    <nav class="navegacao bordaGlobal">
+
+     <h3 class="listaNav"> NAV </h3>
+     <dl class="listaNav"> <!--Lista de definição porquê não tem os marcadores-->
+       <dt class="itemNav"> <a href="../../Semana 3 [24 a 26-08]/AULA 9 - Propriedade display - CSS/Pos. de Elem. - Display.html">
+         Parte 2 - Propriedade display</a></dt>
+       <dt class="itemNav"> Item 2 </dt>
+       <dt class="itemNav"> Item 3 </dt>        
+     </dl>
+    </nav>
+
+
+    <!--Principal ============================================================== -->
+    <main class="principal bordaGlobal">
+     <H3> MAIN </H3>
+
+     <p> Por padrão, qualquer objeto HTML possui um posicionamento do tipo 
+        <code>static</code>, e nenhum atributo afetará ele. O objeto também fica no 
+        mesmo "fluxo" do documento; eu acho que isso significa que ele afeta e é afetado
+        por outros objetos ao redor. No momento que algo "sai do fluxo", ele trabalha
+        independente de qualquer outro objeto, "como se não estivesse lá". 
+     </p>
+     <p>
+        Eu colocaria uns exemplos interativos aqui, mas convenhamos, isso não é tão
+        difícil de entender, e <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+        target="_blank">aqui</a> já tem uma demo perfeita.
+     </p>
+
+     <section class="secao1 bordaGlobal">
+      <p>[SECTION 1] No <code>position: relative</code>, a posição 
+        muda em relação a ele mesmo; mas se mantém no fluxo.</p>
+     </section>
+
+     <section class="secao2 bordaGlobal">
+      <p>[SECTION 2] O <code>position: absolute</code> remove o elemento do fluxo
+      e posiciona ele relativo à um parente que não seja 'static', se houver.</p>
+     </section>
+
+     <section class="secao3 bordaGlobal">
+      <p>[SECTION 3] O <code>position: fixed</code> também tem posicionamento absoluto,
+      mas usa como referência o contêiner inicial (viewport), a janela nesse caso.
+      </p>
+     </section>
+
+     <section class="secao4 bordaGlobal">
+      <p>[SECTION 3] O <code>position: sticky</code> é relativo até certo ponto. Quando
+      seu atributo 'top' chegar a um tamanho especificado, ele para de rolar com a página
+      e fica grudado na tela. É isso que acontece com o header aí em cima.
+      </p>
+     </section>
+
+    </main>
+
+
+    <!--Apoio ============================================================== -->
+    <aside class="apoio bordaGlobal">
+    <p> ASIDE </p>
+    </aside>
+
+
+    <!--Rodapé ============================================================== -->
+    <footer class="rodape bordaGlobal">
+     <H3> FOOTER </H3>
+     <ul> 
+        <li> Item A</li>
+        <li> Item B</li>
+        <li> Item C</li>
+     </ul>
+    </footer>
+
+
+</body>
+
+</html>

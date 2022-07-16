@@ -1,0 +1,35 @@
+/* É possível "chamar" tipos diferentes de atributos:
+
+Posso chamar tags do HTML*/
+body{
+    font-family: Atkinson Hyperlegible; 
+    background-color: #f7f6f1;}
+
+/* Posso chamar classes, que servem para agrupar tags do mesmo tipo.*/
+.h1{
+    background-color: aquamarine; }
+
+.navegacao{
+    background-color: darkcyan;
+    color: #fffefb; }
+/*E também chamar IDs, a identificação única de uma tag*/
+    #ExSm{
+        background-color: cornflowerblue;
+        display: inline; }
+    #InCss{
+        background-color: burlywood;
+        display: inline; }
+
+#titulo1 {
+    background-color: burlywood; }
+
+.principal{
+    background-color: #b6fff3; }
+
+.artigo{
+    color: rgb(12, 12, 12);
+    background-color: rgb(163, 151, 241); }
+
+.rodape{
+    color: whitesmoke;
+    background-color: slategray; }

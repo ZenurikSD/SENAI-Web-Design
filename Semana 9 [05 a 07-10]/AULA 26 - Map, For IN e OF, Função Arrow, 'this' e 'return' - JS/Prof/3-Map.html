@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    <!--JS Maps possui a sintaxe chave-valor-->
+    <p id="teste">TESTE</p>
+    <p id="teste2">TESTE</p>
+    <p id="teste3">TESTE</p>
+    <p id="teste4">TESTE</p>
+    <p id="teste5">TESTE</p>
+    <p id="teste6">TESTE</p>
+    <p id="teste7">TESTE</p>
+    <script>
+        //Criando um Map pelo construytor new Map()
+        //SINTAXE const map = new Map ([[chave1, valor1], [chave2, valor2], ... [chaven, valorn]])
+        const frutas = new Map([['maça', 500], ['banana', 300], ['laranja', 200]])
+
+        //Usamos o métod .get para dizer qual chave estamos chamando e qual valor queremos
+        window.document.querySelector('#teste').innerHTML = `Chamando a chave maça, ele me retornará o valor dela que e: ${frutas.get('maça')} unidades`
+
+        //Usando o método .size ele nos retorna o tamanho do array composto por chave-valor
+        window.document.querySelector('#teste2').innerHTML = `Chamando o método size ele me retornará o tamanho do array que é: ${frutas.size}`
+
+        //Criando um novo Map
+        const bebidas = new Map()
+
+        //Usando a propriedade .set para definir chave-valor do Map
+        bebidas.set('coca-cola', 10)
+        bebidas.set('água', 15)
+        bebidas.set('cerveja', 30)
+
+        window.document.querySelector('#teste3').innerHTML = `O valor da chave coca-cola é: ${bebidas.get('coca-cola')}, o valor da chave água é: ${bebidas.get('água')} e o valor da chave cerveja é: ${bebidas.get('cerveja')}`
+
+        //Usando o método .delete tiramos uma entrada
+        window.document.querySelector('#teste4').innerHTML = `Usando o método .delete, retiramos uma entrada e me retorna true caso a entrada exista e false caso não exista, retirando a entrada EXISTENTE água: ${bebidas.delete('água')} me retornará TRUE e tentando retirar a entrada INEXISTENTE pepsi, ${bebidas.delete('pepsi')} me retornará FALSE!`
+
+        //Usando o método .has verificamos se uma entrada existe
+        window.document.querySelector('#teste5').innerHTML = `Usando o método .has podemos verificar se uma entrada existe, retorna TRUE ou FALSE, testando a entrada EXISTENTE coca-cola me retornará: ${bebidas.has('coca-cola')}, e testando a entrada INEXISTENTE vinho me retornará: ${bebidas.has('vinho')}`
+    
+        //Criando um novo Map
+        const carros = new Map([['fusca', 10], ['brasília', 8], ['uno', 6]])
+
+        //Usando o método .forEach retornamos cada par chave-valor
+        var texto = ''
+        //precisamos nos atentar que a sequência de parâmetros da função é: function(value, key)
+        carros.forEach(function(valor, chave){
+            texto += `${chave} = ${valor}<br>`
+        })
+        window.document.querySelector('#teste6').innerHTML = texto
+
+        //Usando o método .entries também podemos listar as entradas
+        var texto = ''
+
+        for (const x of carros.entries()){
+            texto += `${x}<br>`
+        }
+        window.document.querySelector('#teste7').innerHTML = texto
+    </script>
+</body>
+</html>

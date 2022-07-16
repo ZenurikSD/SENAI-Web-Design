@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF8">
+    <meta httpequiv="XUACompatible" content="IE=edge">
+    <meta name="viewport" content="width=devicewidth, initialscale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="jsMainStyle-mod.css">
+    <link rel="stylesheet" href="../../stylesheets/fontes-externas.css">
+    
+    <script src='Arrays e Metds.js' defer></script>
+</head>
+
+
+<body>
+  <!--Principal ======================================-->
+  <main>
+  <h2>Aula 20 (23/09) - Arrays</h2>
+    <p>Arrays (também chamados de vetores ou matrizes) guardam conjuntos de valores 
+    em uma mesma variável. "Por definição, todo array é um objeto."</p>
+
+    <p><b>Arrays de carros e frutas:</b><br>
+      <code>const carros = ['Ford', 'Volkswagen', General 'Motors'];</code> <br>
+      <code>const frutas = ['Maçã', 'Laranja', 'Banana'];</code><br>
+      Dá para chamar cada valor pelo seu índice: <br>
+      Exemplo: <code>carros[0]</code> vai retornar <code>Ford</code><br>
+    <p>
+      Atribuir um valor a um índice vai alterar ele, como em uma variável.
+      Exemplo: Se <code>carros[0]</code> tem o valor <code>'Ford'</code>, ao fazer <code>carros[0] = 'Renault'</code> eu substituo o valor.
+    </p>
+
+    <h3>Métodos que alteram arrays:</h3>
+    <p>Utilização: <code>array.método()</code></p>
+    <ul>
+      <li><code class="var1">.toString()</code> Transforma em string, texto.</li>
+      <li><code class="var1">.pop</code>, <code class="var1">.push()</code>, <code class="var1">.shift()</code> e <code class="var1">.unshift()</code> servem para adicionar ou remover valores no início ou fim do array.</li>
+      <li><code class="var1">.splice()</code> e <code class="var1">.slice()</code> inserem e removem elementos na posição desejada.</li>
+      <li><code class="var1">.concat()</code> concatena, une/liga, vários arrays.</li>
+      <li><code class="var1">.sort()</code> ordena em sordem alfabética.</li>
+      <li><code class="var1">.reverse()</code> inverte a posição dos valores.</li>
+    </ul>
+  </main>
+
+  <!--Exercício ======================================-->
+  <section class="secaoExercicio">
+    <h3>Exercício</h3>
+    <p>Crie um formulário que receba NOME, IDADE e SEXO e retorne esses valores
+       em um array</p>
+
+    <form action="" method="" class="form">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="number" name="idade" id="idade" placeholder="Idade">
+        Sexo: <select name="sexo" id="sexo">
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+        <button type="button" id="enviar" onclick="arrayInfo()">Enviar</button>
+
+        <p id="saida"></p>
+      </fieldset>
+    </form>
+  
+  </section>
+
+  <!--Testes ======================================-->
+  <section class="secaoTeste">
+    <h4>Seção de testes</h4>
+      <button type=button onclick="explicandoArrays()">Executar</button>
+      <button type=button onclick="limpar()">Limpar</button>
+      <p id="testes"></p>
+  </section>
+  
+</body>

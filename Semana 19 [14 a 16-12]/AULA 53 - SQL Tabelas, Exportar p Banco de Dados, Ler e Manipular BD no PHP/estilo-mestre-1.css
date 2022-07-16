@@ -1,0 +1,138 @@
+/*======= importações =========*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Merriweather&family=Roboto&display=swap');
+
+/* ========== Variáveis =============== */
+:root{
+   /* --- Tema Claro 1 --- */
+   --claro1_txt:    #242424;
+   --claro1_bg-01:  #e0dbd6;
+   --claro1_bg-02:  #f0ebeb;
+   --claro1_bg-03:  #ccc;
+
+   /* --- Tema Escuro 1 --- */
+   --escuro1_txt:    #f4f4f5;
+   --escuro1_bg-01:  #333333;
+   --escuro1_bg-02:  #3d3d3d;
+
+   /* ---- Outras cores --- */
+   --bg-hover:       #7c7c7c7c;
+}
+
+body {
+   background-color: var(--claro1_bg-01); 
+   font: 12pt 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+   
+   hr { margin: 10px 0; }
+   .hr_1{ 
+      width: 20%;
+      margin: 20px auto;}
+
+   button { 
+      padding: 4px 8px;
+      margin: 8px 2px; }
+
+   legend {opacity: 75% }
+   
+
+/*/////////// Regras prontas \\\\\\\\\\\*/
+/*====== Flex ======*/
+.flex_col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+   align-items: center;
+}
+
+.flex_row{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.flex_row_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+/*====== Grid ======*/
+.grid_1x2{
+   display: grid;
+   grid-template-areas: '1 2';
+   /* acabei descobrindo por acidente: não é preciso definir as colunas ou linhas separadamente, se você tiver o número certo de elementos no HTML para a grid, (2 elementos, 2 áreas por ex.) ela coloca eles em uma área automaticamente */
+}
+.grid_3x1{
+   display: grid;
+   grid-template-areas: 
+      '1'
+      '2'
+      '3';
+}
+
+/*====== Fundos ======*/
+.cartao {
+   background-color: var(--claro1_bg-02);
+   box-shadow: -4px 4px 10px #8d8989;
+   width: 75vw;
+   padding: 0 10px;
+   margin: 0 0 1em 0;
+   border-radius: 6px;
+}
+
+
+/* ====== Imagens ====== */
+.figure{ margin: 0; }
+.img_m{
+   width: 40%;
+   height: auto; }
+
+.img_float_left{
+   float: left;
+   max-width: 25%;
+   height: auto; }
+.img_float_right{
+   float: right;
+   width: 25%;
+   height: auto; }
+
+/* ====== Detalhes ======= */
+.div_V {
+   background-color: #252525;
+   width: 1px;
+   height: 13px;
+   margin: auto 10px;
+   display: inline-block;
+}
+
+.ul_limpo{
+   list-style-type: none;      
+}
+
+.sem_quebra { white-space: nowrap;}
+
+
+/*\\\\\\\\\\\\\\\\\\\////////////////////*/
+
+/*====== Classes temporárias ===========*/
+.exibir {display: inline-block; }
+.ocultar {display: none;}
+
+.img_grande{
+   width: 100%;
+   max-width: fit-content;
+   height: auto; }
+
+.editor {
+   background-color: #eeeed3;
+   font-family: 'Merriweather';
+   color: #3f3e3e;
+}
+
+

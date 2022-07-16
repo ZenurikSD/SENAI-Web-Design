@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Seta</title>
+</head>
+<body>
+    <!--A função SETA ou ARROW é usada para minimizar o código escrito-->
+    <p id="teste">TESTE</p>
+
+    <p id="teste2">OUTRO TESTE</p>
+
+    <p id="teste3">MAIS UM TESTE</p>
+
+    <script>
+        //Sem usar a função arrow
+        var olá = function(){
+            return 'Olá, Mundo!!!!!'
+        }
+
+        window.document.querySelector('#teste').innerHTML = olá()
+        
+        //Usando a função arrow
+        var oi = () => {
+            return 'Oi, Mundo cruel!'
+        }
+
+        window.document.querySelector('#teste2').innerHTML = oi()
+
+        //Usando a função arrow com parâmetros
+        var ei = (valor) => `Ei, ${valor}`
+
+        window.document.querySelector('#teste3').innerHTML = ei('Mundo!')
+
+
+    </script>
+</body>
+</html>

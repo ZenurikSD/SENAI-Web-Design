@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto</title>
+</head>
+<body>
+    <!--A ideia é criarmos OBJETOS no JavaScript-->
+    <p class="par" id="p1"></p><hr>
+    <p class="par" id="p2"></p><hr>
+    <p class="par" id="p3"></p><hr>
+    <p class="par" id="p4"></p><hr>
+
+    <script>
+        /*No JavaScript qualquer coisa, basicamente, pode
+        ser considerada um objeto, fazendo uma analogia, uma
+        variável recebe 1 único valor, um array recebe vários
+        valores e um objeto recebe PROPRIEDADES e VALORES*/
+
+        //SINTAXE: const objeto = {propriedade1: valor1, propriedade2: valor2,...,propriedaden: valorn}
+        //Vamos definir um objeto pessoa
+        const pessoa = {
+            primeiroNome: 'Maria', //a propriedade 'primeiroNome' recebeu o valor 'Maria'
+            sobreNome: 'Santos',
+            idade: 45, //As propriedades podem receber qualquer tipo de valor
+            profissão: 'Professora',
+            etnia: 'Negra',
+            altura: '1.65'
+        }
+        //Podemos inserir propriedades e valores nos objetos
+        pessoa.carro = ['Fusca', 'Brasília', 'Uno'] //Uma propriedade de um objeto pode receber um array
+
+        //Podemos retirar propriedades e, consequentemente, valores dos objetos
+        delete pessoa.etnia
+
+        //Podemos definir uma propriedade como objeto, ou seja, teremos objeto dentro de objeto
+        pessoa.pet = {
+            pet1: 'cachorro',
+            pet2: 'gato',
+            pet3: 'irmão mais novo'
+        }
+
+        //Para inserirmos no display os valores das propriedades de um objeto, seguimos da seguinte forma
+        window.document.querySelector('#p1').innerHTML = `A ${pessoa.primeiroNome} ${pessoa.sobreNome} tem ${pessoa.idade} anos, trabalha como ${pessoa.profissão} é da etnia ${pessoa.etnia} e possui ${pessoa.altura} cm`
+
+        window.document.querySelector('#p2').innerHTML = `A ${pessoa.primeiroNome} ${pessoa.sobreNome} tem ${pessoa.idade} anos, trabalha como ${pessoa.profissão} é da etnia ${pessoa.etnia} e possui ${pessoa.altura} cm, e os seguintes carros: ${pessoa.carro[0]}, ${pessoa.carro[1]} e ${pessoa.carro[2]}`
+
+        window.document.querySelector('#p3').innerHTML = `A ${pessoa.primeiroNome} ${pessoa.sobreNome} tem ${pessoa.idade} anos, trabalha como ${pessoa.profissão} e possui ${pessoa.altura} cm, e os seguintes carros: ${pessoa.carro[0]}, ${pessoa.carro[1]} e ${pessoa.carro[2]}`
+
+        window.document.querySelector('#p4').innerHTML = `A ${pessoa.primeiroNome} ${pessoa.sobreNome} tem ${pessoa.idade} anos, trabalha como ${pessoa.profissão} e possui ${pessoa.altura} cm, e os seguintes carros: ${pessoa.carro[0]}, ${pessoa.carro[1]} e ${pessoa.carro[2]}, e os seguinte pets ${pessoa.pet.pet1}, ${pessoa.pet.pet2} e ${pessoa.pet.pet3}`
+    </script>
+</body>
+</html>

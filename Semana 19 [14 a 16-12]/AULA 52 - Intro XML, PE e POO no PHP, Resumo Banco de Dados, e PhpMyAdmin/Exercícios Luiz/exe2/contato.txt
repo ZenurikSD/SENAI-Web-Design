@@ -1,0 +1,5 @@
+nome:Luiz
+idade:16
+email:luizsilvaa1114@gmail.com
+local:Rio de Janeiro
+data e hora:2021-12-13T15:42

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="Estilo.css">
+   <link rel="shortcut icon" href="https://fonts.gstatic.com/s/i/materialiconstwotone/home/v15/24px.svg" type="image/x-icon">
+
+   <title>Alisson Silva</title>
+</head>
+
+<body>
+   REF: https://www.w3schools.com/sql/default.asp
+   https://mariadb.org/documentation/
+   https://mariadb.com/kb/en/introduction-to-relational-databases/
+   
+   <h2>Introdução à Banco de Dados</h2>
+   <p>Na minha definição, um banco de dados é uma estrutura de tabelas para guardar valores. Essas tabelas podem ter colunas compartilhadas entre si, daí o nome "banco de dados relacional".</p>
+
+   <!--Comandos comuns-->
+   <p>Comandos comuns do SQL:
+      1 Criar o banco de dados e selecioná-lo
+         CREATE DATABASE banco1;
+         USE banco1;
+
+      2 Abrir uma nova tabela e definir as colunas com seu tipo de dado e argumentos opcionais:
+         CREATE TABLE pessoas(
+            <!--Coluna Tipo() Argumentos,-->
+            ID tinyInt(20) NOT NULL AUTO_INCREMENT,
+            nome varchar(30) NOT NULL UNIQUE,
+            sexo enum('M','F') NOT NULL,
+            altura decimal(3, 2),
+            PRIMARY KEY (id)
+            );
+
+      3 Inserir dados na tabela em todos os campos ou em específicos
+         INSERT INTO pessoas VALUES(1, 'Joãozin', 'M');
+         INSERT INTO pessoas(nome, sexo) VALUES('Alisson', 'M');
+
+      4 Adicionar colunas à tabela:
+         <!--ADD nome_da_col tipoDeDado-->
+         ALTER TABLE pessoas ADD nacionalidade varchar(30);
+
+      5 Exibir tudo da tabela ou colunas específicas:
+         SELECT * FROM pessoa;
+         SELECT nome FROM pessoa;
+
+   NOT NULL diz que o campo não pode ficar sem valor.
+   AUTO_INCREMENT Incrementa automaticamente um número.
+
+   <!--Funções legais para criar tabelas filtradas-->
+   Valor MIN-imo ou MAX-imo :
+   SELECT MIN(coluna) AS nome FROM tabela;
+   
+   <section> <!--Log de comandos Aula 37-->
+         
+
+      MariaDB [banco1]> create table pessoa (
+          -> ID tinyInt(20) NOT NULL AUTO-INCREMENT,
+          -> Nome varchar(20) NOT NULL,
+          -> Sobrenome varchar(40) NOT NULL,
+          -> Local varchar(40) NOT NULL,
+          -> PRIMARY KEY (id));
+      
+      MariaDB [banco1]> describe pessoa;
+      +-----------+-------------+------+-----+---------+-------+
+      | Field     | Type        | Null | Key | Default | Extra |
+      +-----------+-------------+------+-----+---------+-------+
+      | ID        | tinyint(20) | NO   | PRI | NULL    |       |
+      | Nome      | varchar(20) | NO   |     | NULL    |       |
+      | Sobrenome | varchar(40) | NO   |     | NULL    |       |
+      | Local     | varchar(40) | NO   |     | NULL    |       |
+      +-----------+-------------+------+-----+---------+-------+
+      
+      MariaDB [banco1]> INSERT INTO pessoa VALUES(1, 'Aresmos', 'Arantes', 'Alagoas, PE');
+      
+      MariaDB [banco1]> SELECT * FROM pessoa;
+      +----+---------+-----------+-------------+
+      | ID | Nome    | Sobrenome | Local       |
+      +----+---------+-----------+-------------+
+      |  1 | Aresmos | Arantes   | Alagoas, PE |
+      +----+---------+-----------+-------------+
+      
+      MariaDB [banco1]> INSERT INTO pessoa VALUES(4, 'Baltimor', 'Brigadeiro', 'Budapeste, UE');
+      
+      MariaDB [banco1]> INSERT INTO pessoa VALUES(3, 'Creuza', 'Cristina', 'Ceara');
+      
+      MariaDB [banco1]> SELECT * FROM pessoa;
+      +----+----------+------------+---------------+
+      | ID | Nome     | Sobrenome  | Local         |
+      +----+----------+------------+---------------+
+      |  1 | Aresmos  | Arantes    | Alagoas, PE   |
+      |  3 | Creuza   | Cristina   | Ceara         |
+      |  4 | Baltimor | Brigadeiro | Budapeste, UE |
+      +----+----------+------------+---------------+
+      MariaDB [banco1]> DROP TABLE pessoa;
+   
+   </section>
+
+</body>
+</html>

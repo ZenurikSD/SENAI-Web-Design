@@ -1,0 +1,14 @@
+/* Aparência geral do site */
+.corpo{
+    font-family: Cascadia Code;
+    background-color: #E8E9EC;
+    color: #33374C;
+    width: 900px;
+    margin: 0px auto;}
+
+/* Elementos compartilhados */
+.bordaGlobal{
+    border: solid 3px #2d4b9e;
+    border-radius: 5px; 
+     margin: 5px;
+     padding-left: 5px; }

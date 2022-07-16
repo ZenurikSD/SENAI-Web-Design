@@ -1,0 +1,120 @@
+@charset 'utf-8';
+
+/* At-Rules são declarações, regras, que dizem como o CSS deve se comportar, geralmente puxam alguma informação externa. Iniciam com a arroba (@ = at) */
+
+@import url(https://www.brailleinstitute.org/wp-content/uploads/atkinson-hyperlegible-font/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514.zip);
+
+/*====================================================*/
+
+/*Dá para criar "variáveis" (custom properties) no CSS e guardar valores para usar mais tarde. 
+Sintaxe:
+elemento{ 
+   --nome-da-propriedade: valor; 
+}
+
+Para chamar, use o seguinte método? como um valor:
+   var(--minha-variavel)
+As variáveis funcionam no elemento em que estiverem. Se você quer que ela funcione globalmente, coloque dentro da pseudo-classe "root"*/
+
+:root{
+   --cor-bg-principal: #e6e1e1;
+   --cor-bg-secundaria: #2f3131;
+   --cor-bg-terciaria: #585c5c;
+   --cor-txt: #181717;
+   --cor-link-1: #e6e5eb;
+   --fonte-principal: Segoe UI;
+}
+
+html{
+   font: 12pt var(--fonte-principal);
+   color: var(--cor-01);
+   background-color: var(--cor-bg-principal); }
+*{
+   margin: 0;
+   padding: 0;
+   z-index: 0;
+}
+
+main, section{
+   min-width: 250px;
+   max-width: 600px;
+   margin: 16px 0;
+   background-color: var(--cor-bg-principal);
+   box-shadow: 0 0 12px 1px #808585;
+   justify-content: center;  
+   justify-self: center;
+}
+
+h3, p{
+   margin: 8px 20px;
+}
+
+body{
+   margin: 0;
+   display: grid;
+   justify-self: center;
+   grid-template-columns: 1fr, 80vw, 1fr;
+   grid-template-rows: 1fr, repeat(3fr), 2fr;
+   grid-template-areas: "H H H"
+                        ". M ."
+                        ". S ."
+                        "F F F"; }
+/*=== Cabeçalho ===============================*/
+header{
+   grid-area: H;
+   background-color: var(--cor-bg-secundaria);
+   color: var(--cor-bg-principal);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 12px;
+   padding: 0 10vw;
+   z-index: 1;
+}
+
+   /*--- Navegação ------------*/
+   nav ul > li{
+      padding: 10px;
+      display: inline-block; }
+      nav ul > li:hover{
+         background-color: var(--cor-bg-terciaria); }
+   a{
+      color: var(--cor-bg-principal);
+      text-decoration: none; }
+
+/*=== Principal ===============================*/
+main{
+   grid-area: M; }
+   /*--- Imagem ---------------*/
+   .figure{
+      height: 30vh; }
+   .figure > img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover; /*Object fit ajuda a manter a proporção da imagem ao alterar o tamanho.*/ }
+
+/*=== Seção ===============================*/
+section{
+   grid-area: S; }
+   .secao1 > ul{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding-left: 30px; 
+      list-style-type: square;}
+   .secao1 > ul > li{
+      margin: 0 20px;
+   }
+
+
+/*=== Rodapé ===============================*/
+footer{
+   grid-area: F;
+}
+/*Não tive muito tempo para trabalhar no CSS do rodapé*/
+
+/*=== Página PHP ===============================*/
+button{
+   background-color: var(--cor-bg-secundaria);
+}
+

@@ -1,0 +1,188 @@
+body{
+    font-size: 10vmax;
+}
+
+#container{
+    background-color: cyan;
+    padding: 1vmax;
+}
+
+#um{
+    background-color: darkblue;
+    padding: 1vmax;
+    margin: 1vmax;
+}
+
+#dois{
+    background-color: darkgoldenrod;
+    padding: 1vmax;
+    margin: 1vmax;
+}
+
+#tres{
+    background-color: darkred;
+    padding: 1vmax;
+    margin: 1vmax;
+}
+
+/*Usando display:none
+#dois{
+    display: none;
+}*/
+
+/*Usando display:block para todos
+#container{
+    display: block;
+}
+#um{
+    display: block;
+}
+#dois{
+    display: block;
+}
+#tres{
+    display: block;
+}*/
+
+/*Deixando o container block e os outros inline
+#container{
+    display: block;
+}
+#um{
+    display: inline;
+}
+#dois{
+    display: inline;
+}
+#tres{
+    display: inline;
+}*/
+
+/*Usando display:list-item para os filhos
+#container{
+    display: block;
+}
+#um{
+    display: list-item;
+}
+#dois{
+    display: list-item;
+}
+#tres{
+    display: list-item;
+}*/
+
+/*Usando display:inline-block em 2 filhos
+#container{
+    display: block;
+}
+#um{
+    display: inline-block;
+}
+#dois{
+    display: inline-block;
+}
+#tres{
+    display: block;
+}*/
+
+/*Usando display:inline-table no container e display:block nos filhos
+#container{
+    display:inline-table;
+}
+#um{
+    display: block;
+}
+#dois{
+    display: block;
+}
+#tres{
+    display:block;
+}*/
+
+/*Usando display:table no container e display:block nos filhos
+#container{
+    display: table;
+}
+#um{
+    display: block;
+}
+#dois{
+    display: block;
+}
+#tres{
+    display: block;
+}*/
+
+/*Usando display:table-caption para o parágrafo
+#fig1{
+    display: table-caption;
+    font-size: 1vmax;
+}*/
+
+/*Usando display:table para o container e display:table-cell para os filhos
+#container{
+    display: table;
+}
+#um{
+    display: table-cell;
+}
+#dois{
+    display: table-cell;
+}
+#tres{
+    display: table-cell;
+}*/
+
+/*Usando display:table-[header,row,footer]-group
+#tb{
+    display: table;
+}
+#hd{
+    display: table-header-group;
+}
+#bd{
+    display: table-row-group;
+}
+#ft{
+    display: table-footer-group;
+}
+#hd1{
+    display: table-cell;
+    border: 1px solid black;
+}
+#hd2{
+    display: table-cell;
+    border: 1px solid black;
+}
+#bd1{
+    display: table-cell;
+    border: 1px solid black;
+}
+#bd2{
+    display: table-cell;
+    border: 1px solid black;
+}
+#ft1{
+    display: table-cell;
+    border: 1px solid black;
+}
+#ft2{
+    display: table-cell;
+    border: 1px solid black;
+}*/
+
+/*Usando o display:flex na section
+#sec{
+    display: flex;
+}*/
+
+/*Usando o display:inline-flex na section
+#sec1{
+    display: inline-flex;
+}*/
+
+/*Usando display:grid na section
+#sec2{
+    display: grid;
+}*/

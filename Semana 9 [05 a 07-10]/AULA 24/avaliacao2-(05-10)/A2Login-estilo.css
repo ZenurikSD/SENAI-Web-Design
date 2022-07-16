@@ -1,0 +1,83 @@
+/* Aparência geral do site */
+.corpo{
+    font: 11pt 'Atkinson Hyperlegible';
+    background-color: #E7EAE0;
+    color: #191A1B;
+    /*Grid______________________*/
+     display: grid;
+     grid-template-columns: 1fr 85vw 1fr;
+     grid-template-rows: 7% 1fr;
+     grid-template-areas: 'H H H'
+                          'C C C';
+     gap: 10px;
+     justify-content: center; }
+
+.janela{
+    box-shadow: 0 0 15px #191a1b9c;
+    background-color: #d2d4cd;
+    border-radius: 5px; 
+    padding: 2% 4%;
+    /*Largura_______*/
+    min-width: 270px;
+    flex-basis: 35vw; /*Substitui o width*/
+    max-width: 300px; }
+h3{
+    font: 100 28pt Bahnschrift;
+    padding: 0;
+    margin: 4% 0 0% 0; }
+    
+/* ---------------------------------------------------- */
+.headerContainer{
+    grid-area: H ; 
+    grid-column: 2;}
+
+.main{
+    /*Flex_____________*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3% 3%; /*(Vertical e horizontal) - Cria espaço entre os elementos.*/
+    /*Filho grid_______*/
+    grid-area: C;
+    grid-column: 2;
+    /*-----------------*/
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-origin: content-box;
+    border-radius: 8px;}
+
+.formContainer{
+    grid-column: 2;}
+    
+    .formContainer > article{
+        font: 16pt Bahnschrift Condensed;
+        margin: 0 0 8% 0; }
+    
+    fieldset{
+        display: flex;
+        flex-flow: column wrap; 
+        border: 1px solid #2222247c;}
+        .campo{
+            font:  11pt Atkinson Hyperlegible;
+            padding: 3% 3%;
+            margin: 3% 0%;}
+        .botao{
+            font: 600 11pt Segoe UI;
+            color: #232422;
+            background-color: #e0b769; 
+            box-shadow: 0 0 4px #191a1b54;
+            padding: 2% 0;
+            margin: 2% 0;
+            border: none;
+            border-radius: 3px; }
+            .botao:hover{
+                background-color: #c9a35e; }
+        .info > p{
+            margin: 4% 0 ; }
+        .info > em{
+            font: italic 10pt 'Atkinson Hyperlegible';}
+
+.userContainer{
+    /*Oculto até que um usuário entre*/
+    display: none;
+}

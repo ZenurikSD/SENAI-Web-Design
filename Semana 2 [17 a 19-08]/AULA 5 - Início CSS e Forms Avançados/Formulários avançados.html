@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alisson Silva">
+    <meta name="copyright" content="none">
+
+    <title>Formulários avançados</title>
+</head>
+
+<body>
+    <header>
+      <h1>Outros tipos de entradas em formulários</h1>
+    </header>
+    
+    <main>
+      <form action="/aliss/Documents/SENAI - Web design/" method="GET" name="Formulario1">
+      <!--Para clarificar, o atributo "name" guarda uma variável. Ele dá nome ao tipo de
+      entrada que você usar. Quando você ler a informação dela (seja na url ou o destino
+      que você escolher), vai aparecer name=Informação, tipo email=aaa@bbb.com-->
+
+        <p>Alguns atributos do &lt;input&gt; podem ser adicionados como suas próprias tags:</p>
+        <p><strong>Tag button:</strong></p>
+        <button type="submit" name="submit" id="submit1">Enviar</button>
+        <button type="reset" name="reset" id="reset1">Redefinir</button>
+
+        <p>
+            <strong>Caixa de texto redimensionável</strong><br>
+            <textarea name="txtArea" id="txtArea1" placeholder="Escreva aqui" 
+                    cols="25" rows="6"></textarea>
+        </p>
+
+        <p><strong>Tags Select e Option:</strong></p>
+        <!--A tag 'select' dá uma lista de opções. A tag 'optgroup' insere um grupo de opções
+        A outra fica óbvio né.-->
+        Escolha sua região:
+            <select name="lista1" id="lista1">
+                <optgroup label="Capital">
+                  <option value="Santo Amaro">Santo Amaro</option>
+                  <option value="Pinheiros">Pinheiros</option>
+                </optgroup>
+                <optgroup label="Interior">
+                  <option value="São Caetano">São Caetano</option>
+                  <option value="Osasco">Osasco</option>
+                </optgroup>
+            </select>
+
+        <p><strong>Tag fieldset:</strong></p>
+        <!--A tag 'fieldset' insere um bloco de dados, de qualquer tipo.-->
+
+        <fieldset> <!--Fieldset "pai" para indicar que os botões de enviar e limpar afetam tudo-->
+
+            <fieldset>
+              <legend>Dados Pessoais</legend> <!--'legend' = legenda???-->
+                <input type="text" name="texto1" id="texto1" placeholder="Insira seu nome">
+                <input type="email" name="email" id="email1" placeholder="Insira seu email"><br>
+                <input type="password" name="senha" id="senha1" placeholder="Insira uma senha">
+                <input type="tel" name="tel" id="tel1" placeholder="Insira seu telefone">
+            </fieldset><br>
+
+            <fieldset>
+              <legend>Dados Profissionais</legend>
+              <p><u>Tipo de contrato:</u></p>
+                <input type="radio" name="opcao1" id="opcao1"> CLT 
+                <input type="radio" name="opcao2" id="opcao2"> Temporário
+                <input type="radio" name="opcao3" id="opcao3"> Autônomo
+              <p><u>Cargo:</u></p>
+                <select name="cargos" id="cargos1">
+                  <option value="Estagiário">Estagiário</option>
+                  <option value="Auxiliar">Auxiliar</option>
+                  <option value="Gerente">Gerente</option>
+                </select>  
+              <p><u>De 0 a 10, quanto você gostou desse formulário?:</u></p>
+                0 <input type="range" name="barra" id="barraGostar" min="0" max="10"> 10
+            </fieldset>
+            <br>
+
+            <button type="submit" name="Enviar" id="enviar1">Enviar</button>
+            <button type="reset" name="Restaurar" id="restaurar1">Limpar</button>
+
+        </fieldset>
+
+        </form>
+    </main>
+
+    <section>
+      <form action="/aliss/Documents/" method="post" name="Formulario2">
+        <h3>Outras</h3>
+
+        <p>Seletor de cores:</p>
+        <p><input type="color" name="cor" id="cor1"></p>
+
+
+        <!--input type="date"> <br>
+
+        <input type="datetime"> <br>
+
+        <input type="file"> <br>
+
+
+
+        <input type="image"> <br>
+
+        <input type="month"> <br>
+
+        <input type="number"> <br>
+
+        <input type="password"> <br>
+
+        <input type="number"> <br>
+
+        <input type="radio"> <br>
+
+        <input type="range"> <br>
+
+        <input type="search"> <br>
+
+        <input type="submit">
+
+        <input type="reset">
+
+        </form>
+
+</body>
+
+</html>

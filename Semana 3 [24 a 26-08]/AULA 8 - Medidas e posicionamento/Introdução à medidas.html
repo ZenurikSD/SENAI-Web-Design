@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="root">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alisson Silva">
+    <meta name="copyright" content="none">
+
+    <title> Medidas no HTML </title>
+
+    <link rel="stylesheet" href="estilo-IntroducaoAMedidas.css">
+</head>
+
+<body class="corpo">
+
+ <!--Cabeçalho-->
+ <header class="header">
+   <h1> As diferentes unidades de medida </h1>
+   <p id="referencia"><i>Ref: Aula 8 (25/08</i>)</p>
+ </header>
+
+
+ <!--Principal-->
+ <main class="principal">
+    <p> Em CSS e HTML há várias unidades de medida, e elas podem ser divididas
+        em <b>Absolutas</b> e <b>Relativas</b>.</p>
+
+   <section class="secao1"> <!--Seção 1-->
+    <h3>Absolutas:</h3>
+
+    <p id="paragrafoPixel"> O <u>Pixel (px)</u>, é a mais comum e é "baseado em um pixel
+        com densidade de 96 dpi a uma distância de 28 polegadas." <br>
+        &nbsp;Este texto tem tamanho de 14px.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoPoint"> O <u>Point (pt)</u>. A mais conhecida pelos <i>designers</i>, 
+        essa medida vem da tipografia, é utilizada para fontes e impressões.<br>
+        &nbsp;Este texto tem tamanho de 14pt.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoPolegada"> A <u>Polegada (in)</u> é uma das medidas baseadas no 
+        Sistema Imperial; o "in" é porque se chama <i>inches</i> em inglês. <br>
+        &nbsp;Este texto tem tamanho de 0,14in. 14 inteiros ficaria grande demais.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoCentimetro"> O <u>Centímetro (cm)</u> é uma das medidas baseadas
+        no Sistema Métrico. Lembrando que você pode usar milímetros (mm) também.<br>
+        &nbsp;Este texto tem tamanho de 1,4cm.</p><br>
+
+
+    <h3>Relativas:</h3>
+
+    <p id="paragrafoEM"> O <u>Em (em)</u>, famoso no CSS, herda o tamanho do
+        elemento pai. Se o pai tiver 10px, um filho com <code>1em</code> terá 10px
+        também. Se for <code>2em</code>, ele dobra, e por aí vai.<br>
+        &nbsp;Este texto tem tamanho de 1,4em.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoREM"> O <u>Root-em (rem)</u> é uma modificação do <code>em</code>
+        e leva em consideração o elemento RAIZ. Logo, sendo a tag &lt;HTML&gt;
+        raiz de toda a página, o <code>rem</code> se baseará nela. (Ou o parente mais
+        alto com um tamanho definido).<br>
+        &nbsp;Este texto tem tamanho de 1,4rem.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoPor100"> A <u>Porcentagem (%)</u>, embora não sendo uma unidade 
+        de medida, é usada para criar sites responsivos, pois um elemento de 50% 
+        ocupará metade do seu espaço padrão, independente do tamanho da tela.<br>
+        &nbsp;Este texto tem tamanho de 84%.</p><br>
+
+    <h3>Relativas Viewport:</h3>
+    <p><em>Essas são tão importantes que precisei separar em outro tópico.</em></p>
+    <p>Consideradas "o futuro do CSS", as medidas viewport garantem que um site
+        seja 'responsivo' pois elas se baseiam no tamanho visível da tela.</p>
+
+    <p id="paragrafoVpWidth">No <u>Viewport Width (vw)</u>, o elemento
+        terá a <strong>largura</strong> da área visível. Por exemplo, um texto com 
+        <code>1vw</code> vai ter cada letra ocupando 1% da largura da janela. Tente 
+        mudar a largura da janela e observe. <br>
+        &nbsp;Este texto tem tamanho de 2,4vw.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoVpHeight"> O <u>Viewport Height (vh)</u> é o mesmo conceito, mas para 
+        <strong>altura</strong>. Cada letra ocupa uma porcentagem da altura do viewport.
+        <br>
+        &nbsp;Este texto tem tamanho de 2,4vh.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoVpMin"> No <u>Viewport Minimum (vmin)</u>, ao invés de basear na 
+        altura ou largura da tela, ele se baseia na <strong>menor medida</strong> da 
+        área visível, ou seja, em uma tela de 1600x900px, um objeto com <code>1vmin</code>
+        terá <code>9px</code>, que é 1% da medida menor. <br>
+        <em>Tente reduzir a largura dessa janela e compare com o de cima.</em><br>
+        &nbsp;Este texto tem tamanho de 2,4vmin.</p>
+    <hr> <!-- ==================================== -->
+    <p id="paragrafoVpMax"> No <u>Viewport Maximum (vmax)</u> é o contrário, ele se
+        baseará na <strong>maior medida</strong> da área visível. Com o exemplo anterior,
+        <code>1vmax</code> terá 16px.<br>
+        &nbsp;Este texto tem tamanho de 2,4vmax.</p> <br>
+    <!-- ==================================== -->
+
+    
+   </section>
+ </main>
+
+
+</body>
+
+</html>

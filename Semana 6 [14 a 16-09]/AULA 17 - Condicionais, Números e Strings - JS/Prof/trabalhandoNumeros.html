@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Números</title>
+</head>
+<body>
+    <h1 class="tit" id="tit1">Olá, Mundo!</h1>
+
+    <!--A idéia é trabalhar com números e variáveis-->
+    <script>
+        var n1 = Number(window.prompt('Insira o primeiro número'))//Number transforma uma string em número
+
+        var n2 = Number(window.prompt('Insira o segundo valor'))
+        
+        var n3 = Number((n1 / n2).toFixed(2))// .toFixed decide quantas casas decimais terá
+
+        window.document.writeln(`A divisão dos valores é: ${n3}`)
+        window.document.writeln(typeof(n3))
+
+        var n4 = String((n1 * n2).toFixed(2)) //String transforma número em string
+        
+        window.document.writeln(`O produto é ${n4}`)
+        window.document.writeln(typeof(n4))
+
+    </script>
+</body>
+</html>

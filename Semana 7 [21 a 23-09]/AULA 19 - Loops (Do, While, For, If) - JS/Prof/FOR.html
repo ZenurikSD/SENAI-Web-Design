@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR</title>
+</head>
+<body>
+    <!--Usando o laço de repetição FOR-->
+    <p class="par" id="par1"></p>
+
+    <script>
+        //Queremos incrementar de 2 em 2
+        let texto = ''
+        for (let i = 0; /*if*/i <= 100; i += 2 /*i = i + 2*/){
+            window.console.log(i)
+            texto += `O número é: ${i}<br>`
+        }
+        window.document.querySelector('#par1').innerHTML = texto
+    </script>
+</body>
+</html>

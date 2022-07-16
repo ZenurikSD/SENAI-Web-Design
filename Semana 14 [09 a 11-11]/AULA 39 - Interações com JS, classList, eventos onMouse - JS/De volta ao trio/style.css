@@ -1,0 +1,29 @@
+:root{
+	--cor-1: #6fec6f;
+	--cor-2: #6fc8ec;
+	--cor-3: #e4a3c1;
+}
+
+body {
+	font: 12pt Roboto, Arial;
+	margin: auto;
+	width: 80vw;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap; }
+
+.main {
+	margin: auto;
+	background-color: darkgray;
+}
+
+.caixas {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	margin: 10px;
+}
+
+.cor_A {background-color: var(--cor-1);}
+.cor_B {background-color: var(--cor-2);}
+.cor_C {background-color: var(--cor-3);}

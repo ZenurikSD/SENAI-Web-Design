@@ -1,0 +1,109 @@
+﻿ARQUIVO DE DADOS
+- Arquivo com estrutura de dados organizados de maneira a facilitar o acesso as informações contidas no neste. 
+
+TIPOS DE ARQUIVOS MAIS UTILIZADOS.
+	.TXT - Arquivo Estruturado de Dados em formatado de texto simples, do tipo txt, feito em editor simples de texto, tal como o bloco de notas
+	.XML - Arquivo feito em linguagem de marcação com XML, que especificar uma estrutura de regras de marcação, para definir o armazenamento de dados, no arquivo. São hoje uma das formas mais utilizadas para o armazenamento, estrutura e transporte de dados através da internet.
+
+
+ESTRUTURA DE DADOS NO ARQUIVO .TXT
+
+	- MODELO DA ESTRUTURA DE DADOS DO ARQUIVO .TXT EM COLUNA COMO ESTRUTURA DE CAMPOS E LINHAS COMO REGISTROS
+		- Pode ser criado o arquivo de formato de estrutura de registro em formato de coluna e linha, onde a primeira linha define os nomes dos campos de dados e as demais linhas irão conter os registros de dados. Deve ser utilizados um delimitador, que será um tipo de carácter definido como o separador entre os campos, o de uso mais comum é o ponto e vírgula (;)
+
+		- EXEMPLO
+		
+ID;NOME;EMAIL;TEL;ENDERECO;CIDADE;ESTADO
+1;Renata Lima;renata@gmail.com;1198764982;Rua A, 123 - Apto 23;São Paulo;SP
+2;Sérgio Neto;sergio.neto@gmail.com;1196762982;Rua B, 243 - Apto 2;São Paulo;SP
+3;Laura Matos;lmatos@gmail.com;1198667983;Rua C, 435;São Paulo;SP
+4;Ana Rodrigues;ana.rodrigues@gmail.com;1199567283;Rua D, 435;São Paulo;SP
+
+	- MODELO DA ESTRUTURA DE DADOS DO ARQUIVO .TXT EM ESTRUTURA DE CAMPOS E REGISTROS POR LINHAS
+		- Pode ser criado o arquivo de formato de estrutura de campos e registros por linha, onde os registros se dividem em grupos de tópicos
+
+		- EXEMPLO
+ID:1
+NOME:Renata Lima
+EMAIL:renata@gmail.com
+TEL:1198764982
+ENDERECO:Rua A, 123 - Apto 23
+CIDADE:São Paulo
+ESTADO:SP
+
+ID:2
+NOME:Sérgio Neto
+EMAIL:sergio.neto@gmail.com
+TEL:1196762982
+ENDERECO:Rua B, 243 - Apto 2
+CIDADE:São Paulo
+ESTADO:SP
+
+ID:3
+NOME:Laura Matos
+EMAIL:lmatos@gmail.com
+TEL:1198667983
+ENDERECO:Rua C, 435
+CIDADE:São Paulo
+ESTADO:SP
+
+ID:4
+NOME:Ana Rodrigues
+EMAIL:ana.rodrigues@gmail.com
+TEL:1199567283
+ENDERECO:Rua D, 435
+CIDADE:São Paulo
+ESTADO:SP
+
+ESTRUTURA DE DADOS NO ARQUIVO .XML
+	- MODELO DA ESTRUTURA DE DADOS DO ARQUIVO .XML
+		- Permite desenvolver uma estrutura de dados com base em uma linguagem de marcação que irá, desenvolver uma árvore de rótulos, estruturados conforme exemplo abaixo
+
+- EXEMPLO
+
+<!--Tag inicial obrigatória para criação do arquivo-->
+<?xml version="1.0"?>
+<!--Definição da estrutura da árvores de rótulos-->
+<EstruturaPrincipal>
+    <Contato>
+	    <Id>1</Id>
+	    <Nome>Renata Lima</Nome>
+	    <Email>renata@gmail.com</Email>
+	    <Tel>1198764982</Tel>
+	    <Endereço>Rua A, 123 - Apto 23</Endereço>
+	    <Cidade>São Paulo</Cidade>
+	    <Estado>SP</Estado>
+    </Contato>
+    <Contato>
+	    <Id>2</Id>
+	    <Nome>Sérgio Neto</Nome>
+	    <Email>sergio.neto@gmail.com</Email>
+	    <Tel>1196762982</Tel>
+	    <Endereço>Rua B, 243 - Apto 2</Endereço>
+	    <Cidade>São Paulo</Cidade>
+	    <Estado>SP</Estado>
+    </Contato>
+    <Contato>
+	    <Id>3</Id>
+	    <Nome>Laura Matos</Nome>
+	    <Email>lmatos@gmail.com</Email>
+	    <Tel>1198667983</Tel>
+	    <Endereço>Rua C, 435</Endereço>
+	    <Cidade>São Paulo</Cidade>
+	    <Estado>SP</Estado>
+    </Contato>
+    <Contato>
+	    <Id>4</Id>
+	    <Nome>Ana Rodrigues</Nome>
+	    <Email>ana.rodrigues@gmail.com</Email>
+	    <Tel>1199567283</Tel>
+	    <Endereço>Rua D, 435</Endereço>
+	    <Cidade>São Paulo</Cidade>
+	    <Estado>SP</Estado>
+    </Contato>
+</EstruturaPrincipal>
+
+Editor de Arquivo .XML
+
+ - on-line: https://www.tutorialspoint.com/online_xml_editor.htm
+ - download e instalação: https://www.editix.com/download.html

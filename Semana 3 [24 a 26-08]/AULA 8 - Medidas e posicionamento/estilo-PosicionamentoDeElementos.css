@@ -1,0 +1,74 @@
+/* Aparência geral e topo do site */
+.corpo{
+    font: 11pt Cascadia Code;
+    background-color: #E8E9EC;
+    color: #33374C;
+    /*Centralizando o conteúdo*/
+     display: grid;
+     grid-template-columns: 90vw;
+     justify-content: center; }
+
+.bordaGlobal{
+    border: solid 3px #2d4b9e;
+    border-radius: 5px; 
+     margin: 5px;
+     padding-left: 10px;
+     padding-right: 10px; }
+
+.header{
+    background-color: #E8E9EC;
+    box-shadow: 0px 0px 10px #33374C;
+    position: sticky;
+    z-index: 1;     /* O z-index funciona como camadas. Aqui eu coloquei uma camada */ 
+    top: 5px;}      /* acima para que ele apareça por cima de todos os elementos. */  
+    #paragrafoHeader{
+        margin: 1% 0 1% 0}
+    #aula{
+        border: solid 1px #17181775;
+        border-radius: 2px;
+        padding: 1px 2px 1px 1px;
+        text-decoration: none; }
+
+h1{
+    display: inline;}
+h2{
+    margin: 0;
+    font-weight: 400;}
+h3{
+    margin: 10px 0 0 0 ;}
+
+code{
+    font-family: Cascadia Code;
+    font-weight:300;
+      background-color: rgba(5, 5, 5, 0.171);
+      border-radius: 5px;
+    padding: 0px 4px 0px 4px;
+    margin: 0px -3px 0px -5px;}
+
+a{
+    color: #857b25;  
+    text-decoration-style:solid;}
+
+/*-----------------------------------------------------*/
+.navegacao{
+    padding: 5px 0 5px 10px;}
+    
+.listaNav{
+    display: inline;
+    margin: 0;}
+    .itemNav{
+        display:inline-flex; 
+        margin: 0 10px 0;} /*top, horizontal, bottom*/
+
+/*----------------------------------------------------- */
+.principal{
+    background-color: #AED4FF; 
+    position: relative;}
+    .secao1{
+        background-color: #f5b895;}
+    .secao2{
+        background-color: #6be499 ;}
+    .secao3{
+        background-color: #b96edb;}
+    .secao4{
+        background-color: #DB6E74; }

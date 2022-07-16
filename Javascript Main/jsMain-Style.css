@@ -1,0 +1,144 @@
+:root{
+	--cor-1: #6fec6f;
+	--cor-2: #6fc8ec;
+	--cor-3: #e4a3c1;
+	--cor-4: #ffbf00;
+	--cor-5: #1eb2a6;
+	--cor-6: #ffa372;
+	--cor-branco: #e4e7e0;
+	--cor-branco-2: #e6e1e1;
+	--cor-preto: #333333;
+	--sombra-1: 0 0 10px #333333;
+}
+
+.jsLogo{
+    box-shadow: 3px 3px 0 #1d1c1c;
+    width: 50px;
+    height: 50px;
+    float: left; 
+    margin: 8px 10px;}
+
+body{
+    font: 11pt 'Atkinson Hyperlegible', 'Roboto', Sans Serif;
+    background-color:#e4e7e0; 
+    /*-------------Grid-------------*/
+    display: grid;
+    grid-template-columns: 90vw;
+    justify-content: center; }
+    .caixa{
+        border-radius: 6px;
+        box-shadow: -5px 5px 5px #2324242c;
+        background-color: #dfddd9;
+        color: #252525;
+        margin: 8px 8px;
+        padding: 5px 10px;
+        /*Propriedades grid*/
+        justify-self: center;
+        width: 80vw;
+        max-width: 650px;}
+
+    h2,h3{
+        margin-bottom: 8px;
+        margin-top: 4px; }
+    
+header{
+    position: sticky;
+    top: -4px; 
+    background-color: var(--cor-branco);}
+
+code{
+    font: 400 13px "JetBrains Mono", monospace;
+    background-color: #a1a05c65;
+    border-radius: 3px;
+    padding: 0 2px 0; /* top, horiz., bot*/
+    margin: 0 .007vw;}
+    .codeblock{
+        background-color: #282A36;
+        color: #F6F6F4;
+        border-left: #9350ca 8px solid;
+        border-right: #9350ca 8px solid;;
+        ;
+        padding: 4px 10px;
+        margin: 0 10px;
+        border-radius: 10px; }
+    .codeblock > code{
+        background-color: unset; }
+        .var1{
+            color: #191A1B;
+            background-color: #63e381bd; }
+        /*Cor para comentários*/
+        .comnt{
+            background-color: unset;
+            color: #7B7F8B;}
+
+blockquote{
+    background-color: #b9bbb5c4;
+    border-left: #282A36 6px solid;
+    padding: 3px 6px;
+    width: fit-content;
+}
+
+ol{
+    background-color: #b9bbb5c0;
+    border-left: #e4d611 8px solid;
+    max-width: max-content;
+    padding: 4px 30px;
+    margin: 0 10px;
+    border-radius: 0 10px 10px 0; 
+    /*4 propriedades: topleft, top right, bot-left, bot-right*/
+}
+
+/*--------Semáforo--------------*/
+.fundo_semaforo{
+    /*Propriedades float*/
+    float: left;
+    width: 265px;
+    /*------------------*/
+    margin: 0 10px;
+    border: 3px solid #8a8e92;
+    border-radius: 5px;   
+    background-color: #212224;}
+    .botao{
+        border: 3px solid #131414; 
+        border-radius: 100px;
+        width: 80px;
+        height: 80px;
+        margin: 1%;}
+        #vermelho{
+            background-color: #6d0a0a; }
+        #amarelo{
+            background-color: #6d6b0a; }
+        #verde{
+            background-color: #0d6d0a; }
+    
+/*----------Eventos------------*/
+#paragrafo1{
+    background-color: #B4B6B7;
+    width: max-content;}
+
+/*---------Condicionais-----------*/
+#div1{
+    border: solid 1px #6d6b0a;
+    background-color: wheat;
+    border-radius: 3px;
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: column;
+    flex-grow: 0;
+}
+#botaoRodape{
+    width: 25%;
+}
+
+
+/* ================ Relógio 02/12 */
+.relogio {
+    font: 48px Bebas Neue;
+    background-color: var(--cor-preto);
+    color: #c21414;
+    border: 6px solid #7B7F8B;
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+}

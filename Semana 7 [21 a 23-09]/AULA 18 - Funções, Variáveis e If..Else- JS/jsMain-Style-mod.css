@@ -1,0 +1,45 @@
+.jsLogo{
+    box-shadow: 3px 3px 0 #1d1c1c;
+    width: 50px;
+    height: 50px;
+    float: left; 
+    margin: 8px 10px 5px 10px;}
+
+body{
+    font: 11pt 'Atkinson Hyperlegible'; 
+    background-color:#e4e7e0; 
+    /*-------------Grid-------------*/
+    display: grid;
+    grid-template-columns: 470px;
+    justify-content: center; }
+    body > *{
+        border-radius: 6px;
+        box-shadow: -5px 5px 5px #2324242c;
+        background-color: #dfddd9;
+        color: #252525;
+        margin: 8px 0;
+        padding: 5px 10px;}
+    h2,h3{
+        margin-bottom: 8px;
+        margin-top: 4px; }
+    
+header{
+    margin: 0 0 4px 0;
+    position: sticky;
+    top: -4px; }
+
+/*-------------Fieldset----------------*/
+
+.formContainer{
+    margin: 30px 0;  }
+    .formContainer > form > fieldset{
+        border: 1px solid #666363; }
+    .formContainer > form > fieldset > input{
+        font: inherit;
+        padding: 3px; }
+
+    #errado{
+        color: #f7655b; }
+    #correto{
+        color: #51bd81; }
+        

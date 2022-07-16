@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF8">
+    <meta httpequiv="XUACompatible" content="IE=edge">
+    <meta name="viewport" content="width=devicewidth, initialscale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="jsMainStyle-mod.css">
+    <script src="testes.js" defer></script>
+</head>
+
+<body>
+	<!--Jogo =========================================-->
+  <main>
+  <h2>Jogo-Advinhe o número</h2>
+  <p>Escolhi um número aleatório entre 1 e 100, tente advinhar qual número é. Vou contar se o palpite for muito alto ou muito baixo.</p>
+  <section class="jogoContainer">
+    <fieldset>
+    Digite seu palpite:
+    <input type="number" name="num" id="palpite"/>
+    <button type="button" id="enviar">Enviar</button>
+    
+    <p id="mensagem"></p>
+    </fieldset>
+  </section>
+  
+  </main>
+  
+	<!--Explicação =====================================-->
+	<article>
+	<h3>Tentando fazer eu mesmo</h3>
+	<p><i>"I want you to create a simple guess the number type game. It should choose a random number between 1 and 100, then challenge the player to guess the number in 10 turns. After each turn the player should be told if they are right or wrong, and if they are wrong, whether the guess was too low or too high. It should also tell the player what numbers they previously guessed. The game will end once the player guesses correctly, or once they run out of turns. When the game ends, the player should be given an option to start playing again."</i></p>
+	
+	<!--Tentativas ======================================-->
+	<p>
+	  <blockquote>
+			"It should choose a random number between 1 and 100."
+		</blockquote> 
+	Vou tentar criar primeiro um conjunto de números com o repetidor <code>for</code> e pegar um aleatório usando o método <code>pickRandom</code>.
+	</p>
+
+	<h4>Conjunto</h4>
+		<button type="button" onclick="umAcem()">será?</button>
+		<button type="button" onclick="limpar()">Limpar</button>
+	  <p id="teste"></p>
+
+	</article>
+	
+	
+	
+</body>

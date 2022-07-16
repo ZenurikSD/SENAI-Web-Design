@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Events</title>
+</head>
+<body>
+
+    <!--O evento onclick pode ser editado diretamente no html usando JavaScript-->
+    <h1 class="tit" id="tit1"
+        onclick="window.document.getElementById('tit1').innerHTML = 'Mudei ao clicar!!!'"
+    >Mude este texto ao clicar!!!</h1>
+
+
+
+    <h1 class="tit" id="tit2"
+        onclick= "window.document.getElementById('tit2').innerHTML = Date()"
+    >Mostre a data</h1>
+
+
+    <!--Os eventos onmouseover e onmouseout são referente colocar o mouse sobre o objeto e,
+    retirar o mouse de cima do objeto, respectivamente-->
+    <h1 class="tit" id="tit3"
+        onmouseover="innerHTML = 'Obrigado'"
+        onmouseout="innerHTML = 'Passe o mouse'"
+        style="width: 100px; height: 100px; background: red;"
+    >Passe o mouse</h1>
+        
+</body>
+</html>

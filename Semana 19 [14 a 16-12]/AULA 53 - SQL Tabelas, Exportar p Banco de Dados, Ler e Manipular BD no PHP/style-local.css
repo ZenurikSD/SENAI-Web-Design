@@ -1,0 +1,131 @@
+* { margin: 0; padding: 0; }
+
+/* ========== Variáveis Locais =========== */
+:root{
+   /* -------- Cores -------- */
+   --roxo1:          #8037e0;
+   --roxo2:          #9c67e2;
+   --azul1:          #3856EB;
+   --azul2:          #6177e4;
+
+}
+
+header {
+   width: 100%;
+   height: fit-content;
+   background-color: var(--escuro1_bg-01); 
+   position: sticky;
+   top: 0;}
+
+a {
+   color: var(--escuro1_txt);
+   text-decoration: none; }b
+
+/* =========== Navegação ============= */
+   #lista_nav > li {padding: 14px }
+   #inicio { 
+      background-color: #8037e0; 
+      font-weight: 700; }
+   #inicio:hover{
+      background-color: #9c67e2;}
+
+   #lista_nav > li:nth-child(1n+2):hover{
+      background-color: var(--bg-hover);
+      /* Não entendo bem como o 'nth-child' funciona, mas teve o efeito que eu queria: afetar apenas do segundo elemento em diante, já que o primeiro usa uma cor diferente. */ }
+
+/* ========== Conteúdo Principal ========== */
+.bg_center{
+   background-size: cover;
+   background-position: center;}
+
+.bg_top{
+   background-size: cover;
+   background-position: top;}
+
+#home-bg{
+   background-image: url(imagens/solus43-wall.PNG);
+   background-attachment: fixed;
+   filter: brightness(60%);
+   width: 100%;
+   min-height: 310px;
+   height: 50vh;
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   /*Quando clicar no botão de "Início", essa regra garante que você é levado para o topo da página, não uns pixels abaixo. Mas só funciona em elementos com posicionamento absoluto.*/ }
+
+.quadro_80vw{
+   width: 80vw;
+   max-width: 1000px;
+   padding: 0 25px; }
+   .fundo_1{ background-color: var(--claro1_bg-01) }
+
+   #hero_txt{
+      color: var(--escuro1_txt);
+      align-self: center; }
+   #avatar{
+      background-image: url(imagens/perfil-foto.jpg);
+      border: 6px solid #8037e0;
+      border-radius: 50%; 
+      /*Uma borda de raio 50% deixa um elemento redondo*/
+      min-width: 150px; 
+      width: 20vw; 
+      max-width: 220px;
+      min-height: 150px; 
+      height: 20vw;
+      max-height: 220px;
+      /* Precisei definir todas as dimensões porquê o elemento deformava se eu usasse uma imagem que não fosse quadrada */
+      justify-self: center;
+      margin: 16px; }
+
+/* ---------- Galeria de Abas -------------- */
+#galeria         {padding: 0}
+#galeria_conteudo{padding: 16px 16px 0 16px; }
+
+.abas{
+   overflow: auto;
+   justify-content: center;
+   background-color: var(--claro1_bg-03) ;
+}
+   .aba_botao{
+      cursor: pointer;
+      background-color: inherit;
+      border: none;
+      outline: none;
+      padding: 14px;
+      margin: 0;
+      font: 16px 'Roboto';
+   }
+      .abas button:hover{ 
+         background-color: var(--bg-hover); }
+      .abas button:active{
+         background-color: var(--azul2)
+      }
+      .abas button.ativo{
+         border-bottom: 3px solid var(--azul1);}
+
+   
+
+/* ---------- Seções de texto -------------- */
+article {padding: 16px 16px 0 16px; }
+h2      {margin-bottom: 1em; }
+p       {margin: 1em 0; }
+
+article > figure{margin: 1em 0; }
+
+
+/*-------------- Imagens -----------------*/
+.imgs_quadro{ 
+   height: 250px; 
+   width: 100%;
+   object-fit: cover;
+   /* object-fit é top*/ }
+
+
+/* ================ Rodapé ================ */
+.footer{
+   width: 100%;
+   min-height: 25vh;
+   background-color: #382650;
+   color: beige;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="promptsJS.css">
+
+    <script>
+      function funcao1(){
+      var nome = window.prompt('Insira seu nome:');
+      var N1 = Number(window.prompt('Digite o primeiro valor: '));
+      var N2 = Number(window.prompt('Digite o segundo valor: '));
+      var N3 = N1 + N2;
+
+      document.getElementById('resultado').innerHTML = 
+         (`Olá ${nome}, o resultado da operação entre ${N1} e ${N2} é: ${N3}`)
+      }
+      
+   </script>
+</head>
+
+
+<body>
+   <!--Cabeçalho ==================================================== -->
+   <header class="header estiloGlobal">
+      <H2>Prompts com o Javascript</H2>
+      Criando comandos de entrada com o JS para preencher informações no HTML
+   </header>
+
+   <!--Principal ===================================================== -->
+   <main class="main estiloGlobal">
+      <h3>Trabalhando com strings</h3>
+
+      <button type="button" onclick="funcao1()">Conta entre dois números</button>
+      <p id="resultado">O resultado aparecerá aqui</p>
+   </main>
+
+   <section>
+   </section>
+
+   <!--
+   <section>
+      <h2>[SECTION]</h2>
+   </section-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Flex</title>
+
+    <link rel="stylesheet" href="estilo-IntroFlex.css">    
+</head>
+
+<!--O objetivo é criarmos um site conforme o modelo, usando o módulo
+'grid-template-areas' e o HTML semântico-->
+
+<body>
+   <!--Cabeçalho ==================================================== -->
+   <header class="header bordaGlobal">
+     <H2>[HEADER] Introdução ao layout Flexbox</H2>
+   </header>
+
+   <!--Navegação ===================================================== -->
+   <nav class="nav bordaGlobal"> 
+     <h2>[NAV]</h2>
+        <ol class="listaUL">
+         <li><a href="../../Semana 3 [24 a 26-08]/AULA 8/Introdução à medidas.html" target="self">
+            Aula 8: Introdução às medidas</a> </li>
+
+         <li><a href="../../Semana 3 [24 a 26-08]/AULA 8/Pos. de Elem. - Position.html" target="self">
+            Aula 8: Posicionamento - Propriedade Position</a> </li>
+
+         <li><a href="../AULA 10/Exercício 7 - Tela de login com CSS.html" target="self">
+            Aula 10: Tela de login com CSS</a> </li>
+         </ol>
+         <hr>
+         <ol>
+         <li><a href="Intro ao Grid layout.html" target="self">
+            Voltar à Aula 11: Intro ao Grid layout</a> </li>
+        </ol>
+   </nav>
+
+   <!--Principal ===================================================== -->
+   <main class="main bordaGlobal">
+      <h2>[MAIN]</h2>
+         <p>Para o Flexbox, também precisaremos de um contêiner para acomodar
+         os itens <i>flexíveis.</i>. Se você quer entender os atributos, vê 
+         o CSS.  </p>
+
+      <!--Caixas 1 -------------------------------- -->
+      <section class="flexContainer"> 
+         <div class="caixa">UM</div>
+         <div class="caixa">DOIS</div>
+         <div class="caixa">TRÊS</div>
+         <div class="caixa">QUATRO</div>
+         <div class="caixa">CINCO</div>
+         <div class="caixa">SEIS</div>
+         <div class="caixa">SETE</div>
+         <div class="caixa">OITO</div>
+      </section>
+         <p>O que está aqui acima foi feito apenas modificando o contêiner, sem 
+         mexer nos filhos. </p> <br>
+
+      <!--Justify --------------------------------- -->
+      <h4>Sobre o <code class="codeAlt">justify-content</code>:</h4>
+         <ul>
+         <li>Ao usar <code>flex-start/end</code>, ele se alinha com base no
+         contêiner Flex, então nem sempre vai parecer alinhar verticalmente, 
+         pois depende da orientação (row/column) dele.</li>
+
+         <li>O <code>space-around/between/evenly</code> cria espaços ao redor e
+         entre os itens. Não sei se esse tamanho é configurável igual um 
+         <code>margin</code>, meu palpite é que ele depende do tamanho do 
+         item e do contêiner.</li>
+         </ul>
+
+      <!--Align --------------------------------- -->
+      <h4>Sobre o <code class="codeAlt">align</code>:</h4>
+      <section>
+         O <u>-items</u> alinha os filhos, o <u>-content</u> afeta o 
+         contêiner flex em si e as linhas/colunas que ele gerar através do wrap.
+
+      <p>Você deve ter percebido, todas essas propriedades afetam o contêiner e o
+         espaçamento entre os itens, mas não os itens em si. Logicamente
+         isso é porque essas propreidades são usadas no contêiner.
+      </p> <br> </section>
+   
+
+      <!--Caixas 2 --------------------------------- -->
+      <h4>Agora com as propriedades que afetam os filhos:</h4>
+      <section class="flexContainer">
+         <div class="caixa2" id="um">UM</div>
+         <div class="caixa2" id="dois">DOIS</div>
+         <div class="caixa2" id="tres">TRÊS</div>
+         <div class="caixa2" id="quatro">QUATRO</div>
+         <div class="caixa2" id="cinco">CINCO</div>
+         <div class="caixa2" id="seis">SEIS</div>
+         <div class="caixa2" id="sete">SETE</div>
+         <div class="caixa2" id="oito">OITO</div>
+      </section>  <br>
+
+      <!--Flex basis, grow e shrink ----------------- -->
+      <section> 
+         <h4>Sobre os <code class="codeAlt">flex-basis/grow/shrink</code>:</h4>
+         <p>Para esses atributos, parece que eles se comportam como a unidade 
+         (fr), a fração. Ao invés de definir o tamanho com um número fixo, ele usa uma
+         fração do espaço disponível. É uma medida flexível.
+         </p>
+            <a href="https://css-tricks.com/introduction-fr-css-unit/" target="self"> 
+            Esse artigo</a> explica muito bem e ajuda a entender os atributos flex
+            a seguir.
+
+         <p> Os três atributos trabalham em conjunto. O <code>flex-basis</code> define
+         o <b>tamanho inicial</b> da caixa do conteúdo e significa que ela vai crescer ou 
+         diminuir a partir desse tamanho.</p>
+         <p>Mas ela só irá expandir e/ou contrair se o <code>flex-grow</code> ou 
+         <code>flex-shrink</code> forem maiores que zero.
+         </p> <br>
+
+         <p>Em prática, temos essa caixa com tamanho inicial (basis) de 200px: </p>
+            <section class="flexContainer">
+               <div class="caixa3">basis:200px grow:0 shrink:1</div>
+            </section>
+            
+            <section class="imgContainer"> 
+               <img src="no-shrink.png" alt="Inspecionando a caixa sem usar shink ou grow">
+            </section>
+            
+         <p>Ao usar shink:1 (que já é o valor padrão), ela vai encolher quando 
+         necessário:</p>
+            <section class="imgContainer"> 
+               <img src="yes-shrink.png" alt="Inspecionando a caixa usando shrink">
+            </section>
+
+         <p>E pela mesma lógica, usar o grow:1 faz crescer além do seu tamanho 
+         original quando necessário:</p>
+            <section class="imgContainer"> 
+               <img src="yes-grow.png" alt="Inspecionando a caixa usando grow">
+            </section>
+      </section>
+
+      <br><br>
+
+   </main>
+
+   <!--Apoio ========================================================= -->
+   <aside class="aside bordaGlobal">
+      <h2>[ASIDE]</h2>
+      <h4>Referências:</h4>
+      <ol>
+      <li>Para a maior parte do conteúdo, estudei pelo MDN Docs da Mozilla:
+         <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="self">
+            Flex</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items" target="self">
+            Ordering Flex Items</a></li>
+         </ul> 
+         <i id="italico1">(Usei as versões em inglês porque pra mim estão melhor explicadas, não gostei
+            da tradução para PT, ela omite muita coisa.)</i>
+      </li>
+
+      <li>Para fazer as imagens encolherem igual as caixas flex, 
+         <a href="https://www.w3schools.com/howto/howto_css_image_responsive.asp" target="self">
+         aprendi no w3Schools</a>.  </li>
+      </ol>
+      
+   </aside>
+
+    <!--Rodapé ========================================================= -->
+    <footer class="footer bordaGlobal"> 
+     <h2>[FOOTER]</h2>
+     <p>Nota: Por algum motivo, quando eu aplico o flex no contêiner (a caixa
+        cinza) ele afeta o 'avô' (main), fazendo o texto não quebrar a linha sozinho, 
+        mas ele não deveria ter nada a ver ?!?! <br>
+        Para resolver eu tenho que colocar 'wrap' no contêiner. Mudar o tipo de 
+        display do main também não faz diferença... 🤔?</p>
+
+    </footer>
+
+</body>
+
+</html>

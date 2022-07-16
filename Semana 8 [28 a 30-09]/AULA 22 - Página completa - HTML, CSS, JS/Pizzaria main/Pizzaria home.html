@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="estilo.css">
+	 <link rel="stylesheet" href="../../stylesheets/fontes-externas.css">
+	 
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+	<!--Cabeçalho ======================================-->
+	<header>
+		
+		<section class="logo">
+		<img src="pizza-icon.png" alt="ícone ilustrativo" id="icon">
+		<h2 id="titulo">Pizzaria</h2> 
+		</section>
+
+		<nav>
+			<ul>
+			<li>Home</li>
+			<li>Contato</li>
+			<li>Sobre</li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+	<!--Principal ======================================-->
+	<main>
+		<figure> <h3>Calabresa</h3>
+			<p class="descricao">Recheio de queijo, molho de tomate, calabresa em rodelas, cebola, tomate picado, azeite e orégano. Azeitonas à gosto.</p>
+			<img src="calabresa.webp" alt="calabresa" class="fotos"> </figure>
+
+		<figure> <h3>Napolitana</h3>
+			<p class="descricao">A receita original deste sabor leva tomate, azeite de oliva, orégano e alho. Inclusive, ela foi consagrada um Patrimônio Cultural da Humanidade pela Unesco em 2017.</p>
+			<img src="napolitana.jpg" alt="Muçarela" class="fotos"> </figure>
+			
+		<figure> <h3>Marguerita</h3>
+			<p class="descricao">É preparada com molho de tomate, manjericão, rodelas de tomate fresco, azeitona, queijo muçarela e orégano salpicado. A pizza fica uma delícia e a apresentação super linda!</p>
+			<img src="marguerita.webp" alt="Marguerita" class="fotos"> </figure>
+	
+		<figure> <h3>Portuguesa</h3>
+			<p class="descricao">É feita com queijo, azeitona verde ou preta, ovo cozido, presunto cozido, cebola, ervilha, molho de tomate e azeite. Também há preparações que são acrescentadas milho verde, pimentão e orégano!</p>
+			<img src="portuguesa.webp" alt="Portuguesa" class="fotos"> </figure>
+
+		<figure> <h3>Frango com catupiry</h3>
+			<p class="descricao">A receita costuma levar basicamente queijo muçarela, frango, catupiry, sálvia e molho de tomate. Confesso que é uma das minhas preferidas!</p>
+			<img src="frangoEcatupiry.webp" alt="FrangoCatupiry" class="fotos"> </figure>
+
+		<figure> <h3><b>Especial:</b> Brigadeiro</h3>
+			<p class="descricao">Um clássico de origem brasileira, o brigadeiro é uma das pizzas mais pedidas e populares. </p>
+			<img src="brigadeiro.jpg" alt="Brigadeiro" class="fotos"> </figure>
+	</main>
+	
+	<!--Footer =======================================-->
+	<footer>
+		<form action="" method="POST" class="form">
+		<fieldset> <h4>Faça sua reserva</h4>
+			<input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+			<input type="number" name="tel" id="tel" placeholder="Telefone para contato">
+			<input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+			<input type="datetime-local" name="dia" id="dia" placeholder="Para quando deseja?">
+			
+			<button type="button" onclick="validar()" id="botao-form">
+				Enviar</button>
+		</fieldset>
+		</form>
+		
+	</footer>
+	
+</body>

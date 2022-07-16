@@ -1,0 +1,68 @@
+body{
+	font: 12pt Aktinson Hyperlegible, Roboto, Arial;
+	margin: 0;
+	background-color: #F1F3F4;
+	/*=======Grid corpo========*/
+	display: grid;
+	grid-template-columns: 1fr 85vw 1fr;
+	grid-template-rows: 	 7% auto 10%;
+	grid-template-areas: 'H H H'
+								'. M .'
+								'F F F';
+}
+
+.flexTopBot{
+	display: flex;
+	gap: 0 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	color: #fcfcfc;
+	background-color: #512B58;
+	grid-area: H;
+	position: sticky;
+	top: -16px;
+}
+
+main{
+	background-color: inherit;
+	padding: 0 20px;
+	border-left: 10px solid #282A36;
+	border-right: 10px solid #282A36;
+	grid-area: M;
+	max-width: 700px;
+	justify-self: center;
+}
+
+footer{
+	background-color: #2A7886;
+	grid-area: F;
+	justify-content: center;
+}
+
+h4{ margin: 0; margin-top: 16px; margin-bottom: 5px;}
+
+/*=============================*/
+/*Output de testes*/
+.outputBox{
+		background-color: #b9bbb5c4;
+		border-left: #282A36 6px solid;
+		border-right: #282A36 6px solid;
+		padding: 3px 6px;
+		width: fit-content; }
+		.outputBox > #titulo{
+			text-align: center;
+			padding: 4px;
+			margin: 0;
+			color: #F1F3F4;
+			background-color: #512B58;
+			width:auto;
+		}
+
+code{
+	font: Cascadia Code, Hack, Roboto Mono, Consolas, monospace;
+	background-color: #a875b1;
+	padding: 0 3px;
+}

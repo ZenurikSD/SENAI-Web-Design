@@ -1,0 +1,66 @@
+/*importações */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+:root{
+	--cor-1: #6fec6f;
+	--cor-2: #6fc8ec;
+	--cor-3: #e4a3c1;
+	--cor-branco: #f7f4f4;
+	--cor-preto: #333333;
+}
+
+body {
+	font: 12pt 'Atkinson Hyperlegible', sans-serif;
+	background-color: var(--cor-preto);
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4{
+	margin: 0;
+}
+
+.flex1{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.header, .footer {
+	min-height: 20px;
+	height: 5vh;
+	max-height: 100px;	
+	padding: 10px 7.5vw;
+	background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+	color: var(--cor-branco);
+}
+
+.mainContainer{
+	margin: 0;
+	margin: auto;
+	width: 85vw;
+	max-width: 600px;
+	justify-content: center;
+	background-color: var(--cor-branco);
+}
+	.mainContainer * {
+		padding: 6px 12px;
+	}
+
+.caixas {
+	width: 60px;
+	height: 60px;
+	background-color: orange;
+	margin: 0px;
+	display: inline-block;
+}
+
+.corA {background-color: var(--cor-1);}
+.corB {background-color: var(--cor-2);}
+.corC {background-color: var(--cor-3);}
+
+.borda1 {
+	border: 2px solid #1ba19ae3; border-radius: 3px;
+	box-shadow: 0 0 8px #666666;
+	padding: 6px; margin: 0px;
+}

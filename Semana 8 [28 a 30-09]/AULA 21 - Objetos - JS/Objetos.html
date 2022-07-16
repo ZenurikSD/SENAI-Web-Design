@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="../../Javascript Main/jsMain-Style.css">
+	 <link rel="stylesheet" href="../../stylesheets/fontes-externas.css">
+    
+    <script src="objetos.js" async></script>
+</head>
+
+<body>
+	<!--Objetos ============================================== -->
+	<main class="caixa">
+	<h2>Objetos</h2>
+	<p>
+		Objetos no Javascript são como objetos na vida real mesmo. Um carro por exemplo: carros vêm em várias formas e tamanhos, cores diferentes, marcas diferentes, etc. Todo carro tem essas <b>propriedades</b>, mas os <b>valores</b> são diferentes de um carro para o outro. Um Ford Focus vermelho e um Honda Civic azul são carros, mas de marcas, modelos e cores diferentes. <br>
+		(<a href="https://www.javascript.com/learn/objects" target="self">Javascript - Objects</a>)
+	</p>
+	<p>
+		No JS os objetos podem guardar propriedades e valores. Além disso, podemos definir uma propriedade como objeto por si só, ou seja, um objeto aninhado, um dentro do outro. Por exemplo:
+	</p>	
+	<p class="codeblock"><code>
+		const roupas = {
+			camisetas: 'branca' 
+		} <br><br>
+		<code class="comnt">//Acessando o objeto roupas, propriedade camisetas. A propriedade vira um objeto próprio.</code><br>
+		roupas.camisetas = {
+			camiseta-1: 'Azul',
+			camiseta-2: 'Verde'
+		} <br><br>
+		roupas.camisetas
+		<code class="comnt"></code>
+	</code></p>
+
+	</main>
+
+	<!--Exercício ============================================== -->
+	<article class="caixa">
+		<h2>Exercício</h2>
+		<p>Coloque os valores de um formulário dentro das propriedades de um objeto.</p>
+
+		<section>
+		<form action="" method="POST">
+			<fieldset>
+			<legend>Ficha pessoal</legend>
+			<p>
+			<input type="text" name="nome" id="nome" placeholder="Nome">
+			<input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+			<input type="text" name="idade" id="idade" placeholder="Idade">
+			</p>
+			<p>
+			Digite três pets: <br>
+			<input type="text" name="pet" id="pet1" placeholder="Pet 1">
+			<input type="text" name="pet" id="pet2" placeholder="Pet 2">
+			<input type="text" name="pet" id="pet3" placeholder="Pet 3">
+			</p>
+
+			<button type="button" id="enviar" onclick="fichaObjeto()">Enviar</button>
+			<button type="button" id="apagar" onclick="limpar()">Apagar</button>
+			</fieldset>
+		</form>
+		</section>
+
+	</article>
+
+	<!--Testes ============================================== -->
+	<section class="caixa">
+		<h3>Saída de comandos</h3>
+		<p id="teste"> </p>
+	</section>
+
+
+</body>

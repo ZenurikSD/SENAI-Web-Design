@@ -1,0 +1,15 @@
+.titulo{
+    color: lime;
+}
+
+.h1{
+    font-family: 'Courier New';
+}
+
+/*Isso é a ID do <body>. Aqui a fonte Helv. se aplica até o H1, mas ele tem
+a sua própria, então não muda.*/
+#corpo{
+    background-color: #f1f4f2;
+    font-family: Helvetica;
+    ;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <!--Os comandos condicionais servem para automatizar
+    processos, são eles: if, else, else if, switch-->
+    <p class="par" id="par1"></p>
+    
+    <script>
+        //Trabalhando com if, condicional simples
+        var vel = 80
+        //window.document.querySelector('#par1').innerHTML = typeof(vel)
+
+        //sintaxe if(condição){true:valor}
+        /*if (vel > 50){
+            window.document.querySelector('#par1').innerHTML = `<p>Sua velocidade é: <strong>${vel}</strong> e está acima do permitido</p>`
+        }*/
+
+
+        //sintaxe if(condição){true:valor}else{false:valor}
+        /*if (vel > 50){
+            window.document.querySelector('#par1').innerHTML = `<p>Sua velocidade é: <strong>${vel} km/h</strong> e está acima do permitido</p>`
+        }
+        else{
+            window.document.querySelector('#par1').innerHTML = `<p>sua velocidade é: <strong>${vel} km/h</strong> e está dentro do permitido</p>`
+        }*/
+
+
+        //sintaxe if(condição1){true:valor}else if(condição2){true:valor}else{false:valor}
+        /*if(vel > 90){
+            window.document.querySelector('#par1').innerHTML = `<p>Sua velocidade é: <strong>${vel} km/h</strong> e está acima do permitido e você será multado</p>`
+        }
+        else if (vel > 50 && vel <=90){
+            window.document.querySelector('#par1').innerHTML = `<p>Sua velocidade é: <strong>${vel} km/h</strong> e está acima do permitido</p>`
+        }
+        else {
+            window.document.querySelector('#par1').innerHTML = `<p>Sua velocidade é: <strong>${vel} km/h</strong> e está dentro do permitido</p>`
+        }*/
+        
+    </script>
+</body>
+</html>

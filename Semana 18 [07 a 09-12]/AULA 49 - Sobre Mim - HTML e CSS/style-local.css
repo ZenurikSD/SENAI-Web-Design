@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0; }
+
+header {
+   width: 100%;
+   height: fit-content;
+   background-color: #333333; 
+   position: sticky;
+   top: 0;}
+
+a {
+   color: azure;
+   text-decoration: none; }
+
+   /* Navegação */
+   #lista_nav > li {padding: 14px }
+   #inicio { 
+      background-color: #8037e0; 
+      font-weight: 700; }
+   #inicio:hover{
+      background-color: #9c67e2;
+   }
+
+   /* Não entendo bem como o 'nth-child' funciona, mas teve o efeito que eu queria: afetar apenas do segundo elemento em diante. */
+   #lista_nav > li:nth-child(1n+2):hover{
+      background-color: #e6e6e660;
+   }
+
+/* Conteúdo Principal */
+
+.bg_1{
+   background-image: url(image/dracula-leaves-6272a4-dark.png);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   width: 100%;
+   height: 50vh;
+   position: absolute;
+   top: 3%;
+   z-index: -1;
+   filter: brightness(60%);
+}
+
+
+/* Rodapé */
+.footer{
+   width: 100%;
+   min-height: 25vh;
+   background-color: #382650;
+   color: beige;
+}

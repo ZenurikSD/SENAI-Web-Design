@@ -1,0 +1,105 @@
+/* O asterisco é um seletor universal, se aplica a elementos de QUALQUER TIPO*/
+*{ margin: 0; padding: 0; }
+
+body{
+    background-color: #6b69d6;
+    font: 300 11pt  Cascadia Code, Lucida Console, monospace;
+    /*Layout Grid*/
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 20vw repeat(3, 1fr) repeat(2, 10vw); /* função repetir(X vezes, tal-tamanho)*/
+    grid-template-rows: 10vh 3fr 100%;  /*Por algum motivo, a unidade (fr)action não funciona como eu esperava na linha.*/
+    grid-template-areas: 'H H H H H H' 
+                         'N M M M A A'
+                         'N F F F F F';}
+
+/*--------------Estilos globais---------------*/
+.bordaGlobal{
+    background-color: #eef6f7;
+    border: 2px solid #545756; }
+
+code{
+    font: 300 1em Cascadia Code, Lucida Console, monospace;;
+    background-color: #8f899165;
+    border-radius: 2px;
+    padding: 0 2px 0; /* top, horiz., bot*/ }
+    .codeAlt{
+        background-color: rgba(105, 90, 205, 0.5); }
+
+h4{ margin: 20px 0 10px 0;}
+p, li{ margin: 10px 0; }
+ul, ol{ margin: 0 0 0 35px;}
+a{ color: #3646db; }
+a:visited{ color: #5f597c; }
+#italico1{
+    font-size: 9pt; }
+img{
+    box-shadow: 0 0 10px #252525; 
+    margin: 15px; }
+
+/*--------------------------------------------*/
+.header{
+    grid-area: H; }
+/*--------------------------------------------*/
+.nav{
+    grid-area: N; }
+/*--------------------------------------------*/
+.main{
+    grid-area: M; }
+
+.flexContainer{
+    background-color: #c9cdce;
+    height: 150px;
+    /*Layout Flex*/
+    display: flex;
+    flex-direction: row; /*O flex-direction define a orientação e organização dos filhos*/
+    flex-wrap: wrap; /* Com wrap, os itens vão se deslocar para caber no seu espaço pai conforme se redmensiona a tela*/
+    justify-content:space-evenly; /*Define o alinhamento vertical dos elementos HTML. (contêiner) */
+    align-items: center; } /*Define o alinhamento horizontal dos itens contidos no contêiner*/ 
+    .caixa{
+        background-color: rgb(135, 153, 233);
+        border: solid 3px #00000046;
+        padding: 10px;
+        margin: 5px; 
+        height: 30px;}
+
+    .caixa2{
+        background-color: rgb(135, 233, 200);
+        border: solid 3px #00000046;
+        padding: 10px;
+        margin: 5px; 
+        height: 30px; } 
+        /*Propriedades flex indivuduais*/
+        #um     { order: 1; }
+        #dois   { order: 2; }
+        #tres   { order: 3; }
+        #quatro { order: 4; }
+        #cinco  { order: 5; }
+        #seis   { order: 6; }
+        #sete   { order: 7; }
+        #oito   { order: 8; 
+                  align-self: top} /*Sobescreve a propriedade pai 'align-items', mas depende de algumas condições que eu não entendi*/
+    
+    .caixa3{
+        background-color: #e9d287;
+        border: solid 3px #00000046;
+        padding: 20px;
+        margin: 5px;
+        /*Atributos flex*/
+        flex-basis: 200px; 
+        flex-shrink: 1;
+        flex-grow: 0;}
+
+.imgContainer{
+    display: flex; 
+    justify-content: center;}
+    .imgContainer > img{
+        height: auto;
+        max-width: 90% }
+
+/*--------------------------------------------*/
+.aside{ 
+    grid-area: A; }
+/*--------------------------------------------*/
+.footer{
+    grid-area: F; }

@@ -1,0 +1,39 @@
+html{
+	background-color: #252525;
+}
+body{
+	font: 12pt Cascadia Code, Arial;
+	color: #e5ece5;
+	/*Grid*/
+	display: grid;
+	grid-template-columns: 80vw;
+	justify-content: center; }
+
+main, fieldset{
+	border-radius: 8px;
+}
+
+main{
+	background-color: #2f3131;
+	box-shadow: 0 0 16px #0000006c;
+	padding: 0 12px 12px 12px; }
+fieldset{
+	display: inline-block; }
+fieldset{
+	border: 3px solid #bdb651; }
+input, button{
+	color: #e5ece5;
+	background-color: unset;
+	font: inherit;
+	padding: 4px;
+	border: unset;
+	border-radius: 3px;
+	border-bottom: 2px solid #51bdb8;
+}
+button{
+	background-color: #3c3f3f;  }
+button:hover, input:hover{
+	background-color: #4d5050;
+}
+
+/*Meu CSS tá uma bagunça, não estou tendo tempo para trabalhar melhor nele.*/

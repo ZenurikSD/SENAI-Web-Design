@@ -1,0 +1,57 @@
+
+body{
+    font-size: 6vmax;
+}
+
+.container{
+    background-color: aqua;
+    padding: 10px;
+    position: relative;
+}
+
+.um{
+    background-color: brown;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+}
+
+.dois{
+    background-color: coral;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+
+}
+/*Posicionamento RELATIVE
+.dois{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}*/
+
+/*Posicionamento ABSOLUTE
+.dois{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}*/
+
+/*Posicionamento FIXED
+.dois{
+    position: fixed;
+    top: 30%;
+}*/
+
+/*Posicionamento STICK*/
+.dois{
+    position: sticky;
+    top: 0px;
+}
+
+.tres{
+    background-color: darkgreen;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+}

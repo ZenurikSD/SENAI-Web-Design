@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Silva</title>
+
+    <link rel="stylesheet" href="jsMain-Style.css">
+	 <link rel="stylesheet" href="/stylesheets/fontes-externas.css">
+    
+    <script src="jsMain-Scripts.js"></script>
+</head>
+
+
+<body>
+   <!--Cabeçalho ====================================== -->
+   <header class="caixa">
+	 <figure class="jsLogo">
+	 <img class="jslogo" src="jslogo.png" alt="logo JS" width="50px" height="50px"> </figure>
+
+	 <h2>Arquivo-Mestre {Javascript}</h2>
+	 <b>[Atualizado 12/10]</b> A cada aula vou expandir no que puder explicando os conceitos do JS e programação.
+	</header>
+
+	<!--Introdução ===================================== -->
+	<main class="caixa">
+		<h3>Introdução</h3>
+		<p>O Javascript é a linguagem de programação escolhida para programar o 
+		comportamento e adicionar funções às páginas web. Existem vários termos
+		estranhos que é preciso se familiarizar primeiro para entender a linguagem;
+		mas você vai ver que com a perspectiva certa, não é nada difícil.
+		</p>
+		<p>As coisas que quero explicar ou ao menos entender, se eu não tiver o tempo, e também saber usar sem medo de esquecer a sintaxe:
+			<ol>
+			<li>Números (objeto;)</li>
+			<li>Operadores aritméticos, relacionais, booleanos etc.;</li>
+			<li>Variáveis (var, let e const);</li>
+			<li>DOM (Já tenho uma ideia mas não sei o que ele me permite fazer.);</li>
+			<li>Strings;</li>
+			<li>Arrays;</li>
+			<li>Eventos;</li>
+			<li>Funções</li>
+			<li>Loops;</li>
+			<li>Objetos;</li>
+			<li>Palavras-chave</li>
+			<li>Map</li>
+			</ol>
+		</p>
+		<p>Aqui eu vou manter apenas as explicações principais. Aulas individuais ou tópicos mais aprofundados vou criar um link para o arquivo separado.</p>
+		
+	</main>
+
+	<!--Strings ======================================== -->
+	<section class="caixa">
+		<h3>Strings</h3>
+		<p>Uma string é qualquer texto sem função (letras, palavras, frases etc.) envolto por aspas ou crases.</p>
+
+			<p class="codeblock"><code>
+			let cor = "Verde" <br>
+			print(`A cor que você escolheu é <code class="var1">${cor}</code>`) <br><br>
+			<code class="comnt">
+			// '1' é uma string. Não vai ser tratada como número. <br>
+			// "var = 1" também é string. Não vai ser interpretada como variável. </code>
+			</code></p> 
+			<br>
+
+	</section>
+
+	<!--Variáveis ====================================== -->
+	<section class="caixa">
+		<h3>Variáveis (expandir)</h3>
+		<p>Variáveis permitem que você faça referência à mesma informação várias vezes. Em Javascript as variáveis podem ser definidas usando <code>var</code> e seu valor pode ser alterado chamando seu nome.</p>
+		<p class="codeblock"><code>
+			var exemplo = "criei uma variável do tipo string" <br>
+			exemplo = 25 + 3 &nbsp;&nbsp; <code class="comnt">//Agora ela é um valor numérico</code>
+		</code></p><br>
+		
+		<h3>Constantes</h3>
+		<p>Constantes recebem valores da mesma forma que variáveis, mas a diferença é que elas não podem ser reescritas nem ficar vazias.</p>
+	</section>
+
+	<!--Operadores ===================================== -->
+	<section class="caixa">
+	  <h3>Operadores</h3>
+	  <p>Operadores são os mesmos que vocês vê na matemática, com umas diferenças. Eles vem em vários grupos. Aritméticos  </p>
+	  <table> <!--Tabela aqui. esqueci como faz -->
+	  Operador | Significado | Exemplo prático
+	  !== Diferente de, 
+	    
+	  </table>
+	</section>
+
+	<!--Arrays ========================================= -->
+	<section class="caixa">
+		<h3>Arrays</h3>
+		<p>Um Array é um conjunto de valores representado dentro de colchetes [ ], <i>tipo</i> uma lista. Um array dentro de outro é conhecido como um "array aninhado" (nested array).</p>
+		<p class="codeblock"><code>
+			var ingredientes = ['farinha', 'leite', 'ovos', 'açúcar']
+		</code></p>
+		<br>
+	</section>
+	
+   <!--Eventos ======================================== -->
+   <section class="caixa">
+       <h3>Eventos</h3>
+       <p>Modificar elementos quando algo acontece. Por exemplo, quando o usuário
+        clicar, tocar, passar o mouse em cima etc.. <br>
+        É qualquer atributo que começa com "on-":</p>
+
+        <p id="paragrafo1"
+           onmouseover="window.document.getElementById('paragrafo1').innerHTML = 'Olár' "> 
+           <code>onmouseover</code> Passa o mouse aqui
+       </p>
+
+   </section>
+
+   <!--DOM ============================================ -->
+   <section class="caixa">
+		<h3>Estrutura DOM (Document Object Model)</h3>
+		<p>
+		O Modelo de Objetos do Documento (ou DOM) é uma API que permite acessar e manipular o HTML e CSS utilizando comandos que o Javascript é capaz de entender.</p>
+
+   </section>
+
+   <!--Funções ======================================== -->
+   <section class="caixa">
+		<h3>Funções!</h3>
+		<p>Apesar do nome assustar um pouco, funções são blocos de código isolados, 
+		que só executam quando são chamadas</p>
+		
+		<p>Sintaxe: <br/>
+		<code>function</code> Declara que è uma função.
+		Seguido do nome da função, você usa parênteses
+		para definir argumentos, mas no início ela vai 
+		estar vazia mesmo </p>
+		
+   </section>
+
+   <!--Condicionais =================================== -->
+   <section class="caixa">
+	   <h3>Condicionais</h3>
+	   <p><i>"Os comandos condicionais servem para automatizar processos, são eles:
+		<code>if</code>, <code>else</code>, <code>else if</code> e <code>switch</code>. </i></p>
+
+		<div id="div1">
+			<form action="" method="post">
+
+				<input type="number" id="notaDoUser" 
+				placeholder="Qual nota você tirou?">
+				<button type="button" id="btForm" onclick="notas()"> Enviar </button>
+
+			</form>
+
+			<p id="pa1">Resultado vem aqui</p>
+		</div>
+
+		Usar o <code>else if</code> ao invés de <code>else</code> serve para acrescentar mais
+		condições. Um <code>else</code> comum não tem condição, ele se aplica quando todo o resto
+		for falso.
+
+   </section>
+
+	<!--Loops ========================================== -->
+	<section class="caixa">
+		<h3>Laços de repetição (loops) </h3>
+		<blockquote>"Existem vários tipos de loops, mas essencialmente todos eles fazem a mesma coisa: repetem uma ação um certo número de vezes" <br>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="self">Loops and iteration --MDN</a>
+		</blockquote>
+
+		<h4><code class="var1">for(){..}</code></h4>
+		<p>O loop <code>for</code> vai se repetir até que uma condição especificada se torne falsa. Ele verifica a condição primeiro para depois decidir se vai executar a declaração.</p>
+
+		<p class="codeblock"><code>
+			for (expressão de início; condição; incremento){<br>	
+			&nbsp;&nbsp; declaração }
+		</code></p>
+
+		<h4><code class="var1">do..while()</code></h4>
+		<p>A declaração <code>do..while</code> vai se repetir até que uma condição especificada se torne falsa. A diferença aqui é que ele primeiro executa a declaração uma vez e depois testa a condição para saber se vai repetí-la.</p>
+
+		<p class="codeblock"><code>
+			do <br>
+			&nbsp;&nbsp;declaração <br>
+			while (condição for verdadeira)
+		</code></p>
+
+		<h4><code class="var1">for(..in..){}</code></h4>
+		<p>A declaração <code>for..in</code> executa iterações (repetições) a partir de uma variável especificada, percorrendo todas as <u>propriedades</u> de um objeto. <br>
+		<i>Para cada propriedade distinta, o Javascript executará uma iteração.</i></p>
+
+		<p class="codeblock">
+		<code class="comnt">
+			//para(variável <b>em</b> objeto){ <br>
+			//&nbsp;&nbsp;declaração }
+		</code>
+		</p>
+	</section>
+
+	<!--Exercícios ===================================== -->
+	<section class="caixa">
+		<h3>Exercício semáforo</h3>
+
+		<section class="fundo_semaforo">
+		<button class="botao" id="vermelho"
+				onclick="window.document.getElementById('vermelho')
+						.style.backgroundColor = '#CC1900' " 
+				onmouseleave="window.document.location.reload()"> PARE
+		</button>
+
+		<button class="botao" id="amarelo"
+				onclick="window.document.getElementById('amarelo')
+						.style.backgroundColor = '#CCBE00' "
+				onmouseout="window.document.location.reload()"> ATENÇÃO
+		</button>
+
+		<button class="botao" id="verde"
+				onclick="window.document.getElementById('verde')
+						.style.backgroundColor = '#05CC00' " 
+				onmouseout="window.document.location.reload()"> VÁ
+		</button>
+		</section>
+
+		<p>Clicar "acende" e tirar o mouse "apaga" (recarrega a página, o que é 
+			meio cursed, mas não achei um método melhor).</p>
+		
+	</section>
+
+	<!--Tentando entender códigos ====================== -->
+	<section class="caixa">
+		<h2>Análise de códigos</h2>
+		<h4>Cria um parágrafo dizendo que o botão foi clicado:</h4>
+	
+		<code>
+		function criarParagrafo() {
+		let prgrf = document.createElement('p');
+		prgrf.textContent= 'Você clicou no botão';
+		document.body.appendChild(prgrf);
+		}
+	
+		const botoes = document.querySelectorAll('button');
+	
+		for(let i = 0; i < botoes.length ; i++) {
+		botoes[i].addEventListener('click', criarParagrafo);
+		}
+		</code>
+	
+		Esse é complicado e eu não compreendo tudo ainda, então vamos por partes. 
+		/(Lista de definição aqui)/
+		-  Começa com uma função para criar um parágrafo e inserir no documento:
+		Nela temos uma variável que não pode ser redeclarada (let) chamada "prgrf" que recebe o comando de criar um elemento do tipo parágrafo no documento. Toda vez que essa variável ser chamada, ela cria um parágrafo.
+	
+		Então ela é chamada para alterar o conteúdo do texto (método .textContent), escrevendo que o botão foi clicado.
+		Daí acessamos o corpo do documento para anexar (append) um filho, que é o parágrafo com o texto, referenciado na variável <code>prgrf</code>.
+	
+		- Uma constante 'button' é criada para pegar todos os elementos do tipo botão;
+	
+		- Então usamos um laço de repetição (loop) do tipo <code class="alt1">for</code>, que até agora eu não entendi o que faz.  Mas eu imagino que é para fazer com que todos os botões sejam incluídos no receptor de eventos.
+	
+	
+	
+		<h4>Cria um parágrafo que pode ser clicado para alterar parte do seu texto:</h4>
+	
+		<code>
+		const prgrf = document.querySelector('p');
+	
+		prgrf.addEventListener('click', atualizarNome);
+	
+		function atualizarNome() {
+		let nome = prompt('Insira um novo nome');
+		para.textContent = 'Jogador 1:' + nome;
+		}
+		</code>
+	
+		Seleciona-se o elemento com o método <code>querySelector()</code> para atribuir ele a uma constante, assim fica mais fácil chamar a constante ao invés do caminho completo toda vez.
+	
+		Adiciona um método "receptor de eventos"  na constante para ouvir o sinal de quando um evento ocorre (um clique nesse caso) e responder enviando outra ação, que aqui é um bloco de código (função) chamada 'atualizarNome()':
+	
+		Por fim definese a função. Ela cria uma variável 'nome' que pergunta (prompt) ao usuário por um novo nome; e depois altera o conteúdo do texto na constante (prgrf) para incluir o nome que o usuário digitar.
+	
+	</section>
+
+	<!--Rodapé ========================================= -->
+	<footer></footer>
+</body>
+
+</html>

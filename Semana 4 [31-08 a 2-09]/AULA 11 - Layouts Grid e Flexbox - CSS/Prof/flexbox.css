@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*A valor flex ou flexbox chama o módulo*/
+/*Por padrão o alinhamento do flexbox é em linha*/
+.flex-container{
+    display: flex;
+    background-color: cyan;
+    height: 200px;
+    /*flex-direction definirá a direção do container
+    e dos items*/
+    /*flex-direction: column;/*deixará o container em coluna*/
+    /*flex-direction: column-reverse;/*deixará o container em coluna e os items em ordem reversa*/
+    /*flex-direction: row;/*deixará o container em linha -valor default-*/
+    /*flex-direction: row-reverse;/*deixará o container em linha e os items em ordem reversa*/
+    
+    /*flx-wrap definirá se os items serão do tipo wrap*/
+    flex-wrap: wrap;/*os items se deslocarão conforme redimensionamos a tela*/
+    /*flex-wrap: nowrap;/*os items não se deslocarão -valor default-*/
+    /*flex-wrap: wrap-reverse;/*os items se deslocarão, porém invertendo as linhas*/
+
+    /*justify-content definirá o alinhamento vertical dos items*/
+    /*justify-content: center;/*alinha ao centro*/
+    /*justify-content:flex-start;/*alinha ao começo do container -valor default-*/
+    /*justify-content:flex-end;/*alinha ao fim do container*/
+    /*justify-content: space-around;/*gera espaços ao redor dos items*/
+    /*justify-content: space-between;/*gera espaços apenas entre os items*/
+
+    /*align-items define o alinhamento horizontal dos items*/
+    /*align-items: center;/*alinhou os item ao centro do container*/
+    /*align-items: flex-start;/*alinha ao começo do container*/
+    /*align-items: flex-end;/*alinha ao final do container*/
+    /*align-items: stretch;/*faz os items terem a altura do container -valor default-*/
+    /*align-items: baseline;/*os items terão a altura do container a partir de uma linha de base*/
+
+    /*align-content alinha as linhas em si*/
+    /*align-content: space-between;/*cria espaços entre as linhas*/
+    /*align-content: space-around;/*cria espaços ao redor das linhas*/
+    /*align-content: stretch;/*faz ter a altura possível dentro da linha -valor default-*/
+    /*align-content: center;/*faz alinhar ao centro das linhas*/
+    /*align-content: flex-start;/*faz alinhar ao início*/
+    /*align-content: flex-end;/*faz alinhar ao final*/
+}
+
+/*O sinal de maior que '>' serve para chamar todos
+os filhos*/
+.flex-container > div{
+    background-color: darkmagenta;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 10vw;
+    /*line-height: 75px;*/
+}
+
+
+.um{
+    /*order: 2;/*A propriedade order define a ordem dos items*/
+    /*flex-grow: 1;/*A propriedade flex-grow define o quanto um item pode crescer -valor default 0-*/
+    /*flex-shrink: 1;/*A propriedade flex-shrink define como um elemento irá se comportar -valor default 1- -valor padrão 0-*/
+    /*flex-basis: 300px;/*define uma base, ou tamanho inicial*/
+}
+.dois{
+    /*order: 3;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 0;*/
+}
+.tres{
+    /*order: 1;*/
+    /*flex-grow: 6;*/
+    /*flex-shrink: 1;*/
+}

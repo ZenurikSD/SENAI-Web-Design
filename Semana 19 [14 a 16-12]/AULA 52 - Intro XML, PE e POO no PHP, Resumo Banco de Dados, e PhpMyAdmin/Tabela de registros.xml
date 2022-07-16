@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+      <Contato> 
+         <Nome>Alisson</Nome>
+         <E-mail>alisson@email.com</E-mail>
+         <Telefone>11966666666</Telefone>
+         <Endereço>Rua Imaginária, nº20</Endereço>
+         <Estado>São Paulo</Estado>
+      </Contato>
+      

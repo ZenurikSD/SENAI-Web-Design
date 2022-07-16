@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+</head>
+<body>
+    <!--A ideia é trabalhar com um formulário
+    html e usando eventos e funções JavaScript-->
+    <form action="" method="get" class="forms" id="form1">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <input type="text" name="pnome" id="pnome"
+                class="nome" placeholder="Insira seu primeiro nome:"><br>
+            <input type="text" name="snome" id="snome"
+                class="nome" placeholder="Insira seu sobrenome"><br>
+            <button type="button" id="sb"
+                onclick="cnome()"
+            >ENVIAR</button>
+            <p class="par" id="p1"></p>
+        </fieldset>
+    </form>
+    <script>
+        /*Queremos inserir no parágrafo em branco
+        o nome completo digitado nos input*/
+        
+        function cnome(){
+            var pnome = window.document.querySelector('#pnome').value
+            var snome = window.document.querySelector('#snome').value
+            window.document.querySelector('#p1').innerHTML = `Seu nome completo é: ${pnome} ${snome}!`
+        }
+    </script>
+
+
+</body>
+</html>

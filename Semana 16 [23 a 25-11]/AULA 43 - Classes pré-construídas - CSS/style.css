@@ -1,0 +1,142 @@
+/*importações */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+
+:root{
+	--cor-1: #6fec6f;
+	--cor-2: #6fc8ec;
+	--cor-3: #e4a3c1;
+	--cor-4: #ffbf00;
+	--cor-branco: #f7f4f4;
+	--cor-branco-2: #e6e1e1;
+	--cor-preto: #333333;
+	--fundo-1: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-blue-background-with-geometric-forms-image_280879.jpg);
+	--sombra-1: 0 0 10px #333333;
+}
+
+
+html {
+	background-image: var(--fundo-1);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+	/* A propriedade 'background' agrega a image,repeat,position e attachment */
+
+}
+
+body {
+	font: 12pt 'Atkinson Hyperlegible', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+	
+	/* #fundo1{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		filter: blur(8px) brightness(50%);
+	} */
+
+h1, h2, h3, h4{ margin: 8px 0 8px 0; }
+a {color: var(--cor-4); }
+
+.flex_row{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.flex_col{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sombra_1{ box-shadow: var(--sombra-1); }
+
+.borda0 { border: none; }
+.borda1 {
+	border: 2px solid var(--cor-4); 
+	border-radius: 10px; }
+
+.tag {
+	background-color: var(--cor-2);
+	border-radius: 4px;
+	padding: 1px 3px;
+}
+
+/*=========== Header =================*/
+.header, .footer {
+	min-height: 20px;
+	padding: 10px 7.5vw;
+	background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+	color: var(--cor-branco); }
+
+.menu { margin: 0 12px; }
+.tit 	{ font-size: 1.2rem;  }
+
+.drop_content{
+	display: none;
+	background-color: var(--cor-preto);
+	text-decoration: unset; 
+	padding: 6px;}
+	
+	.exibir .drop_content{
+		display: inline-block; }
+
+
+/*=========== Main =================*/
+.mainContainer{
+	z-index: 0;
+	margin: 0 auto;
+	padding: 12px 30px;
+	min-height: 65vh;
+	width: 80vw;
+	max-width: 700px;
+	justify-content: center;
+	background-color: var(--cor-branco);
+} 
+.caixas {
+	background-color: var(--cor-4);
+	width: 60px;
+	height: 60px;
+	margin: 0px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+
+/*=========== Footer =================*/
+.footer {
+	height: 200px;
+}
+.footer_info{ 
+	min-width: 15%;
+	padding: 0 12px;
+}
+
+/* Formulário */
+.form {
+	max-width: 300px;
+}
+.form input, button, textarea{
+	width: max-content;
+	color: #e5ece5;
+	background-color: unset;
+	font: inherit;
+	padding: 4px;
+	border: unset;
+	border-radius: 3px;
+	border-bottom: 2px solid #51bdb8;
+}
+
+/*------------ Classes variáveis ---------------*/
+.corA {background-color: var(--cor-1);}
+.corB {background-color: var(--cor-2);}
+.corC {background-color: var(--cor-3);}
+.corD {background-color: var(--cor-4);}
+.preto{color: var(--cor-preto);}

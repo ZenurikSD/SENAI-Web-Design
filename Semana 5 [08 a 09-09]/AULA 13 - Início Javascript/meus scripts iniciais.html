@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson</title>
+    <link rel="stylesheet" href="PrimeiroJS.css">
+    
+    <script>
+        
+        /*chamando variáveis*/
+        var x = 5;
+        var y = 10;
+        var z = x + y;
+        function funcao1(){
+            getElementById('demo')
+            window.alert = "O valor de Z é: " + z }
+
+        function funcao2(){
+            var idade = prompt("Quantos anos você tem?","0")
+
+            if (isNaN(idade)){
+                 alert("Digite um número"); }
+            else{
+                (alert("Sua idade é " + idade)); }
+        }
+
+    </script>
+
+    <style>
+        body{
+            font: 11pt Arial;
+            background-color: #222b2b;
+            color: floralwhite; 
+            grid-template-columns: repeat(3, 1fr);}
+    </style>
+</head>
+<body>
+    <h2>Introdução ao javascript (Estilo e script embutidos no HTML)</h2>
+    <p id="texto">O elemento com a ID certa vai ser modificado pelo script</p>
+    <button type="button"
+            onclick='document.getElementById("texto")
+                .innerHTML="Texto oculto"'>
+        Clique aqui
+    </button>
+    
+    <p id="imprimir">Imprima a página. A função vazia não escolhe nenhum
+    elemento em especial, e afeta a página inteira, eu acho. </p>
+    <button type="button"
+            onclick="window.print()">Imprimir</button>
+
+    <p id="layout">Tentando criar um script que altera o estilo do 
+    display.</p>
+    <button type="button"
+            onclick='document.getElementsByTagName("body")
+                .style.display="grid" '>Clique para Grid</button>
+
+    <p><button type="button"
+            onclick="funcao2()">Idade?</button>
+    </p>
+
+    <p id="demo">Parágrafo de demonstração</p>
+    
+</html>

@@ -1,0 +1,143 @@
+*{ margin: 0; }
+
+body{
+    font: 12pt 'Atkinson Hyperlegible', 'Roboto', Arial;
+    background-color: #FCF8E8;
+    /*---------Grid------------*/
+    display: grid;
+    grid-template-columns: 1fr 90vw 1fr;
+    grid-template-rows: 80px 1fr auto;
+    grid-template-areas: 'H H H'
+                         '. M .'
+                         'F F F';
+    justify-content: center; }
+
+header, footer { padding: 0 5vw; } /*Alinhar com a grade do meio*/
+
+/*============Cabeçalho=================*/
+header{
+	position: sticky;
+	top: 0;
+	color: #f4e4e5;
+    background-color: #21243D; 
+    /*Grid filho*/
+    grid-area: H;
+    /*-------Flex----------*/
+    display: flex;
+	flex-direction: column; 
+	/*Os itens são dispostos um abaixo do outro. Usar 'align' vai alinhar para a esquerda e direita e 'justify' em cima e em baixo.*/
+	flex-wrap: wrap; 
+	/*Para usar o espaço disponível quando puder, tendo espaço suficiente, tudo aparece lado a lado, como se fosse um flex 'row'*/
+	justify-content: center; 
+	/*A mágica: Centraliza os itens no confinamento do header, nesse caso, ele centraliza verticalmente.*/
+}
+	.logo{
+		display: flex;
+		flex-direction: row;
+		width: 30vw; }
+			#icon{
+			width: 70px; }
+			#titulo{
+			margin-left: 20px;
+			align-self: center; }
+
+    /*----------Navegação-----------------*/
+    nav{ 
+		align-self: flex-end; } /*Com o flex column, alinhar para o fim do contêiner flex vai mover o item para a direita*/
+        nav > ul{
+            padding: 0;
+            list-style-type: none; }
+        nav > ul > li{
+        	display: inline;
+            padding: 0 1vw; }
+
+
+/*============Principal=================*/
+main{
+    background-color: inherit;
+    box-shadow: 0 0 10px #acbccc;
+    /*Propriedades Grid*/
+    grid-area: M;
+    /*-------Flex------*/
+    display: flex;
+    justify-content: center; /*Centraliza os itens dentro do main*/
+    justify-self: center;    /*Centraliza o main em si dentro da página*/
+	align-items: baseline;   /*Altera o eixo secundário para que os cards adjacentes não expandam quando você apontar para algum. Por padrão o flex faz eles como 'stretch'.*/
+    flex-wrap: wrap;
+    max-width: 900px;
+	gap: 20px;
+	/*------------------*/
+	padding: 20px;
+}
+/*------------Pizzas------------*/
+	main > figure{
+		background-color: #ECDFC8;
+		border-radius: 3px;
+		box-shadow: 0 0 10px #acbccc;
+		padding: 0;
+		min-width: 150px;
+		width: 35vw;
+		max-width: 240px;}
+		main > figure:hover{ box-shadow: 0 0 14px #747f8a; }
+		/*----Nome, descrição e imagens---*/
+		main > figure > h3{
+			text-align: center;
+			padding: 5px;
+			font: 400 14pt Delight Candles, 'Roboto', Arial;}
+			.descricao{
+				font: 200 11pt Bahnschrift, 'Roboto', Arial;
+				padding: 4px;
+				text-align: center;
+				display: none; }
+				/* Ao apontar para a figura (qualquer parte do card), altera o display da descrição.*/
+				main > figure:hover > .descricao{ display: inline-block; }
+			.fotos{
+				width: inherit;
+				min-width: inherit;
+				max-width: inherit;}
+
+/*========== Rodapé ==============*/
+footer{
+    background-color: #ECDFC8;
+    grid-area: F; 
+    /*-------Flex------*/
+	display: flex; 
+}
+	.form{ 
+		width: 200px; 
+		padding: 8px;
+		background-color: #4A5189; }
+	.form > fieldset{
+		padding: 0;
+		border: none;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column; }
+	    .form > fieldset > h4{
+	    	text-align: center; 
+			font-weight: 200;
+			color: #f8f9f9;}
+		.form > fieldset > input{
+			color: #f8f9f9;
+			font: 500 10pt Arial;
+			background-color: #21243D;
+			border: none;
+			border-bottom: 2px solid #FFD082;
+			width: 90%;
+			padding: 5%; 
+			margin-top: 12px;}
+		
+
+/*========== Individuais ==============*/
+#botao-form{
+	align-self: center;
+	font: 900 12pt Candara;
+	background-color: #FFD082;
+	color: #171818;
+	border: 3px solid #ac8c59 ;
+	padding: 2%;
+	width: 40%;
+	margin: 12px; }
+	#botao-form:hover{
+		background-color: #c5a269;
+	}

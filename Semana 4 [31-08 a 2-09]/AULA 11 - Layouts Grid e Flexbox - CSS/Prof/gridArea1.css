@@ -1,0 +1,52 @@
+/*O Asterisco é usado para chamar todo o html*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: grid;
+    background-color: aqua;
+    grid-template-areas: 'a a a a a a'
+                        'b c c c d d'
+                        'b e e e e e';
+    grid-template-columns: 17vw 17vw 17vw 17vw 17vw 17vw;
+    grid-template-rows: 20vh 70vh 10vh;
+}
+
+.a{
+    grid-area: a;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.b{
+    grid-area: b;
+    background-color:brown;
+    border: 1px solid black;
+}
+/*O sinal de maior que '>' indica que está
+chamando os filhos*/
+.b > ul > li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: cyan;    
+}
+
+.c{
+    grid-area: c;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+.d{
+    grid-area: d;
+    background-color: chartreuse;
+    border: 1px solid black;
+}
+
+.e{
+    grid-area: e;
+    background-color: coral;
+    border: 1px solid black;
+}

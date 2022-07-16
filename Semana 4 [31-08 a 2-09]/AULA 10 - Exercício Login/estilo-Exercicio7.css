@@ -1,0 +1,67 @@
+/* Aparência geral do site */
+.corpo{
+    font: 11pt 'Atkinson Hyperlegible';
+    background-color: #E7EAE0;
+    color: #191A1B;
+     display: grid;
+     grid-template-columns: 90vw;
+     grid-template-rows: 10vh 1fr;
+     gap: 10px;
+     justify-content: center; }
+
+/* ---------------------------------------------------- */
+.headerContainer{
+    grid-column:1;
+    font-size: 12pt;}
+
+.main{
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-origin: content-box;
+    border-radius: 8px;}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr; }
+    h3{
+        font: 100 28pt Bebas Neue;
+        text-decoration: none;
+        padding: 0;
+        margin: 4% 0 0% 0; }
+    div{
+        font: 16pt Bebas Neue;
+        margin: 0 0 8% 0; }
+    
+    fieldset{
+        display: flex;
+        flex-flow: column wrap; 
+        border: 1px solid #2222247c;}
+
+    #formulario{
+        grid-column: 2;
+        width: 300px;
+        height: 65vh;
+        box-shadow: 0 0 15px #191a1b9c;
+        background-color: #d2d4cd;
+        border-radius: 5px; 
+        padding: 20px 40px 50px 20px;}
+        .campo{
+            font:  11pt 'Atkinson Hyperlegible';
+            display: block;
+            width: 250px;
+            padding: 3% 3%;
+            margin: 3% 0%;}
+        .botao{
+            font: 600 11pt Segoe UI;
+            padding: 2% 0;
+            margin: 2% 0;
+            border: none;
+            border-radius: 3px;
+            color: #232422;
+            background-color: #e0b769; 
+            box-shadow: 0 0 4px #191a1b54; }
+        .info > p{
+            margin: 4% 0 ;
+        }
+        .info > em{
+            font: italic 10pt 'Atkinson Hyperlegible';}

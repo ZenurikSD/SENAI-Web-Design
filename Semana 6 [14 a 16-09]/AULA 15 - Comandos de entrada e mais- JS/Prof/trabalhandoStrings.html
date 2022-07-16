@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Strings</title>
+</head>
+<body>
+    <h1 class="tit" id="tit1">Olá, Mundo</h1>
+    <script>
+        //window.alert("CUIDADO") //Aparece uma tela de Aviso
+        
+        //window.confirm('JavaScript') //Aparece uma tela de Confirmação
+        
+        var nome = window.prompt('Insira seu nome:') //Aparece uma tela com campo de Digitação
+        var idade = window.prompt('Insira sua idade')
+        var sexo = window.prompt('Insira seu sexo')
+        //window.document.write('Bem Vindo, ' + nome + '! Sua idade é: ' + idade + ' anos, seu sexo é: ' + sexo) //O sinal de mais representa a concatenação
+        window.document.write(`<h1>Bem Vindo, ${nome}, sua idade é: ${idade} anos, seu sexo é: ${sexo}</h1>`) //Uso do Template Strings ***É NECESSÁRIO UTILIZAR CRASE***
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO...WHILE</title>
+</head>
+<body>
+    <!--Usando o laço de repetição DO...WHILE-->
+    <p class="par" id="par1"></p>
+    <script>
+        //Declarando variáveis
+        var cont = 0
+        var texto = ''
+
+        //Comando DO obriga a fazer o que estiver no bloco
+        do {
+            window.console.log(cont)
+            texto += `<br>O número é:` + cont
+            cont--
+        }
+
+        //WHILE garante a repetição
+        while(cont >= 0)
+
+        window.document.querySelector('#par1').innerHTML = texto
+
+
+        while(cont <= 10)/*do*/{
+            window.console.log(cont)
+            cont++
+        }
+    </script>
+</body>
+</html>

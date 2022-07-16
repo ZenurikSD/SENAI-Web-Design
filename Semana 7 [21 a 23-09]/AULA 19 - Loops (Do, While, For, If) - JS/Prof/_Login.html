@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <!--Inserindo ESTILO-->
+    <style>
+        body{
+            background-color: cyan;
+            margin: 0;
+        }
+        #form1{
+            background-color: rgba(33, 30, 77, 0.623);
+            
+        }
+        #dvf{
+            width: 250px;
+            height: 250px;
+            margin: auto;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!--Vamos criar a tela de Login-->
+    <div class="dv" id="container">
+        <div class="dv" id="dvf">
+            <form action="" class="form" id="form1">
+                <fieldset>
+                    <legend>LOGIN</legend>
+                    <p>Nome: <input type="text"
+                        name="nome1" id="nome1"
+                        class="nome"
+                        placeholder="Insira o seu nome:"></p>
+                    <p>Senha: <input type="password"
+                        name="pass1" id="pass1"
+                        class="pass"
+                        placeholder="Insira sua senha:"></p>
+                    <p><button type="button"
+                        onclick="valida()">ENVIAR</button></p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script>
+        function valida(){
+
+            /*Declaração de variáveis*/
+            var nome = window.document.querySelector('#nome1').value
+            //window.console.log(nome)
+            var senha = window.document.querySelector('#pass1').value
+            //window.console.log(senha)
+
+            /*Agora trataremos os input*/
+            if (nome === 'Pedro Rodrigues'
+            && senha === '1311') {
+                window.alert(`Seja Bem Vindo: ${nome}`)
+            }
+            else {
+                window.alert(`${nome} NÃO ESTÁ AUTORIZADO!!!!`)
+            }
+        }
+    </script>
+</body>
+</html>

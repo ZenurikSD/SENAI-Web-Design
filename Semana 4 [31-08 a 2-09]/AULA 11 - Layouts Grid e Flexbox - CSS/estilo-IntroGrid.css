@@ -1,0 +1,53 @@
+/* O asterisco é um seletor universal, se aplica a elementos de QUALQUER TIPO*/
+*{ margin: 0; padding: 0; }
+
+body{
+    background-color: #038387;
+    font: 300 11pt Cascadia Code;
+    /*Layout Grid*/
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 20vw repeat(3, 1fr) repeat(2, 10vw); /* função repetir(X vezes, tal-tamanho)*/
+    grid-template-rows: 10vh 72vh 12vh;  /*Por algum motivo, a unidade (fr)action não funciona como eu esperava na linha.*/
+    grid-template-areas: 'H H H H H H' 
+                         'N M M M A A'
+                         'N F F F F F';}
+
+/*--------------Estilos globais---------------*/
+.estiloGlobal{
+    background-color: #eef6f7;
+    border: 2px solid #545756; }
+
+code{
+    font: 300 12pt Cascadia Code;
+    background-color: #8f899165;
+    border-radius: 2px;
+    padding: 0 2px 0; /* top, horiz., bot*/ }
+
+h4{ margin: 20px 0 10px 0;}
+p, li{ margin: 10px 0; }
+ul, ol{ margin: 0 0 0 35px;}
+a{ color: #2a8164; }
+a:visited{ color: #442e4d; }
+#italico1{
+    font-size: 9pt; }
+img{
+    box-shadow: 0 0 10px #252525; 
+    margin: 15px; }
+    
+/*--------------------------------------------*/
+.header{
+    grid-area: H; }
+/*--------------------------------------------*/
+.nav{
+    /*Propriedades do grid*/
+    grid-area: N; }
+/*--------------------------------------------*/
+.main{
+    grid-area: M; }
+/*--------------------------------------------*/
+.aside{ 
+    grid-area: A; }
+/*--------------------------------------------*/
+.footer{
+    grid-area: F; }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" async></script>
+	
+	<title>Alisson Silva</title>
+</head>
+
+<body>
+	<!--Header ===================================== -->
+	<header class="header flex_row">
+	<nav>
+	<picture class="flex_row menu" onmouseover="mouse_exibir(this)" onmouseout="mouse_ocultar(this)">
+		<img src="menu_white_36dp.svg" alt="menu">
+		
+		<span class="drop_content flex_row">
+			<a href="#"> Home</a>
+			<a href="#Contato">Contato</a>
+		</span>
+	</picture>
+	</nav>
+	
+	<h2 class="tit">17/11 AULA 41 - Interações com JS</h2>
+	</header>
+	
+	<main class="mainContainer">
+	<!--Principal ===================================== -->
+	<section> 
+	<h3>CSS é para estilo</h3>
+	Novas regras do W3C pedem que qualquer tipo de interação seja feita exclusivamente pelo Javascript. Mas como fazer agora então??
+	</section>
+
+	<!--Seções teste ================================== -->
+	<section class="cxContainer">
+	<p>Substituição do :hover por uma função para adicionar e remover classes no evento de passar o mouse.</p>
+		<div class="caixas" onmouseover="cxAtiva(this)" onmouseout="cxInativa(this)"></div>
+		<div class="caixas" onmouseover="cxAtiva(this)" onmouseout="cxInativa(this)"></div>
+		<div class="caixas" onmouseover="cxAtiva(this)" onmouseout="cxInativa(this)"></div>
+	</section>
+
+	<article>
+	<h3>Aprendido hoje:</h3>
+		
+	<p><span class="tag">CSS</span>
+	Nessa página estou usando umas propriedades "novas" para manipular a imagem de fundo. <code>background: image, size, repeat, position e attachment.</code></p>
+
+	<p><span class="tag">JS</span> 
+	Utilizando <code>classList.add</code> e <code>.remove</code> para alterar o visual de uns elementos no evento de passar o mouse.</p>
+
+	</article>
+	</main>
+
+	<!--Rodapé ======================================= -->
+	<footer class="footer flex_row">
+		<form action="exportar-form.php" method="post" class="form flex_col">
+		<fieldset class="borda1 corB">
+			<legend>Contato</legend>
+				<input type="text" name="nome" id="nome"
+				placeholder="Nome">
+				<input type="email" name="email" id="email"
+				placeholder="E-mail"/>
+				<textarea name="msg" id="msg" cols="20" rows="1" placeholder="Insira sua mensagem"></textarea>
+				
+				<button type="submit">Enviar</button>
+		</fieldset>
+		</form>
+
+		<article class="footer_info">
+		<h4>Mapa do site</h4>
+		<ul>
+			<li>Home</li>
+			<li>Sobre</li>
+			<li>Outros</li>
+			<li>Aulas</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>???</li>
+
+		</ul>
+		</article>
+
+		<article class="footer_info">
+			<h4>Mais texto para encher o espaço</h4>
+			<p> The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target. <br> 
+			Common targets are Element, or its children, Document, and Window, but the target may be any object that supports events (such as XMLHttpRequest). </p>
+		</article>
+	</footer>
+
+
+</body>
+</html>

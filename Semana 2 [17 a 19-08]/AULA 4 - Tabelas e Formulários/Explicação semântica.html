@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alisson Silva">
+    <meta name="copyright" content="none">
+
+    <title>O que é semântica? (Primeiro da noite)</title>
+</head>
+
+<body>
+    <h1>Semântica</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">
+    <i>MDN Web Docs - Semantics</i></a>
+    <p>
+        Em programação, semântica diz respeito ao <i>significado</i> da parte
+        de um código - por exemplo "o que acontece ao executar aquela linha de
+        JavaScript?", ou "qual propósito ou função daquele elemento do HTML?"
+    </p>
+
+    <h2>Semânticas no HTML</h2>
+    <p>
+        Por exemplo, no HTML, o elemento &lt;h1&gt; é um elemento semântico, que
+        dá a função (ou significado) de "um título de primeiro nível" na sua página.
+        E por padrão, os navegadores irão estilizar ele para ter a aparência de um
+        título grande; mas com o CSS você pode usar outra "folha de estilo" para 
+        ter a aparência que você quiser.
+    </p>
+    <p>
+        Por outro lado, você pode fazer qualquer elemento <i>parecer</i> com um
+        título grande, considere o seguinte: <br>
+
+        <code>
+            &lt;span style="font-size: 32px; margin: 21px 0;"&gt;Isso é um título H1?&lt;/span&gt;
+        </code>
+    </p>
+    <p>
+        Isso irá renderizar como: <br>
+        <span style="font-size: 32px; margin: 21px 0;"><strong>Isso é um título H1?</strong></span>
+    </p>
+    <p>
+        Certamente se parece com um, mas ele não possui <b>valor semântico</b>,
+        então não terá nenhum dos benefícios do CSS e teria que ser estilizado
+        individualmente.
+    </p>
+
+
+</body>
+
+
+</html>

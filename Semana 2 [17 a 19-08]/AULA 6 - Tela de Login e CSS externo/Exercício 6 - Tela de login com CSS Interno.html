@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alisson Silva">
+    <meta name="copyright" content="none">
+
+    <title>Alisson Fernandes da Silva</title>
+
+    <style>
+        .corpo{
+            font-family: 'Bahnschrift';
+            background-color: #EEEEEE;
+            color: #444444; }
+
+        .header{
+            position: relative;
+            left: 25%   }
+
+        .fieldset{
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(173, 173, 173); 
+            width: 30%;
+            position: relative;
+            left: 30%;  }
+
+        #fieldset2{
+            border-style: dotted;
+            border-width: 2px;
+            width: 200px;
+            position: relative;
+            left: 10px; }
+
+        .botao{
+            border-style: none;
+            border-radius: 3px;
+            background-color: rgba(15, 146, 221, 0.815);
+            color: rgb(253, 253, 253);
+            font-size: 14px;
+            padding-inline: 8px;
+            padding-top: 3px;
+            padding-bottom: 3px;    }
+            
+        .link{
+            font-size: 12px;
+            position: relative;
+            top: -15px;}
+        #email{
+            position: relative;
+            left: 20px;
+        }
+        #senha{
+            position: relative;
+            left: 20px;
+        }
+
+    </style>
+</head> 
+
+
+<body class="corpo">
+
+    <header class="header">
+        <h1>Site completamente confiável</h1>
+    </header>
+
+
+    <main>
+
+    <section> <!--Início da Seção 1-->
+
+    <fieldset class="fieldset">
+    <legend>Insira sua conta</legend>
+
+     <fieldset class="fieldset" id="fieldset2">
+
+     <form action="" method="POST" name="Login1" id="formLogin">
+        <p><input type="email" name="email" id="email" 
+                placeholder="Email ou Telefone"></p>
+        <p><input type="password" name="pass" id="senha" placeholder="Senha"></p>
+        
+     </fieldset>
+
+        <p><button type="submit" class="botao" name="sbmt" id="botaoEnviar" value="Entrar">Entrar</button>
+    
+        <button type="button" class="botao" name="btCriar" id="botaoCriar" value="CriarC">Criar conta</button>
+        </p>
+
+        <a href="https://duckduckgo.com" class="link">
+            Esqueceu sua senha?</a>
+
+     </form>
+    </fieldset>
+    
+    </section> <!--Fim da Seção 1-->
+
+    </main>
+    
+    
+</body>
+</html>

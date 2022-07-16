@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS</title>
+    
+</head>
+<body>
+    <!--Uso da palavra-chave THIS-->
+    <p id="teste"></p>
+    
+    <!--Posso usar a palavra-chave THIS em um evento-->
+    <button onclick="this.style.display='none'">CLIQUE</button>
+    
+    <script>
+        //Criando um objeto
+        const pessoa = {
+            pnome : 'José',
+            snome : 'Silva',
+
+            nomeCompleto : function(){
+                return `O primeiro nome da pessoa é: ${this.pnome} e seu sobrenome é: ${this.snome}`
+            }
+        }
+
+        window.document.querySelector('#teste').innerHTML = pessoa.nomeCompleto()
+
+
+    </script>
+</body>
+</html>

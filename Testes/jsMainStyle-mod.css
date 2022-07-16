@@ -1,0 +1,59 @@
+.jsLogo{
+    box-shadow: 3px 3px 0 #1d1c1c;
+    width: 50px;
+    height: 50px;
+    float: left; 
+    margin: 8px 10px 5px 10px;}
+
+body{
+    font: 11pt Atkinson Hyperlegible; 
+    background-color:#e4e7e0; 
+    /*-------------Grid-------------*/
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;}
+    body > *{
+        border-radius: 6px;
+        box-shadow: -5px 5px 5px #2324242c;
+        background-color: #dfddd9;
+        color: #252525;
+        margin: 8px 8px;
+        padding: 5px 10px;}
+    h2,h3{
+        margin-bottom: 8px;
+        margin-top: 4px; }
+    
+header{
+    margin: 0 0 4px 0;
+    position: sticky;
+    top: -4px; }
+
+code{
+    font: 400 10pt Consolas;
+        background-color: #bdba2265;
+        border-radius: 3px;
+    padding: 0 2px 0; /* top, horiz., bot*/
+    margin: 0 .007vw;}
+    .var1{
+        color: #191A1B;
+        background-color: #63e381bd; }
+
+blockquote{
+    background-color: #b9bbb5;
+    border-left: #1a1818 3px solid;
+    padding: 3px 6px;
+    width: fit-content;
+}
+
+/*=========== Elementos individuais ================*/
+main{
+    /*Propriedades flex*/
+    flex-basis: 60vw;
+    min-height: 150px;
+    max-width: 500px;
+    min-width: 350px; }
+    #palpite{
+        width: 60px;
+        margin: 0 12px;
+    }

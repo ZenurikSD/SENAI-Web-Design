@@ -1,0 +1,176 @@
+/* Aparência geral e topo do site  */
+.corpo{
+    font: 300 11pt Cascadia Code;
+    background-color: #191A1B;
+    color: #E7EAE0;
+    /*Centralizando o conteúdo*/
+     display: grid;
+     grid-template-columns: 90vw;
+     justify-content: center; }
+
+.bordaGlobal{
+    border: solid 3px #9243c7be;
+    border-radius: 0px; 
+     margin: 5px 5px;
+     padding-left: 10px;
+     padding-right: 10px; }
+
+.borda2{
+    border: 3px solid #2e9e64; }
+
+.header{
+    background-color: #191A1B;
+    box-shadow: 0px 0px 10px #33374C;
+    position: sticky;
+    top: 1px;
+    z-index: 1; }/* O z-index funciona como camadas. Aqui eu coloquei uma camada acima
+                   para que ele apareça por cima de todos os elementos.*/
+    #paragrafoHeader{
+        margin: 1% 0 1% 0}
+    #aula{
+        border: solid 1px #e7eae075;
+        border-radius: 2px;
+        padding: 1px 2px 1px 1px;
+        text-decoration: none; }
+
+/*---------------------------------------------------*/
+h1{
+    display: inline;}
+h2{
+    margin: 0;
+    font-weight: 400;}
+.main > h4{
+        margin-top: 4%;}
+strong{
+    font-weight: 900; }
+code{
+    font-family: Cascadia Code;
+    font-weight:300;
+        background-color: #915ca165;
+        border-radius: 5px;
+    padding: 0 2px 0; /* top, horiz., bot*/
+    margin: 0 .007vw;}
+    .var1{
+        color: #191A1B;
+        background-color: #63e381bd; }
+a{
+    color: #479dff;  
+    text-decoration: none;}
+li{
+    margin: 5px 0;}
+blockquote{
+    margin: 1vh 1vw;
+    background-color: #D0CBC5;
+    font-size: 8pt;
+    box-shadow: 3px 3px 10px #2d2f3f5d; }
+
+/*-----------------------------------------------------*/
+.navegacao{
+    padding: 5px 0 5px 10px;}
+.listaNav{
+    display: inline;
+    margin: 0;}
+    .itemNav{
+        display:inline-flex; 
+        margin: 0 10px 0;} /*top, horizontal, bottom*/
+
+/*----------------------------------------------------- */
+
+/* Usando o 'table', o elemento se comporta como uma tabela, ocupando apenas o espaço
+necessário e usa uma caixa de nível block.
+10 QI = Usar o HTML para criar tabelas
+200 QI = Usar o CSS  */
+.main{
+    border-color: mediumturquoise;
+    background-color: #33374cc4;
+    padding-bottom: 2%;}
+    .imgFlex{
+        display: flex;
+        justify-content: center;}
+        #imagem1{
+            width: 320px; 
+            box-shadow: 0 0 20px #161616;}
+    .subsecao1{
+        display: block; }
+    .subsecao2{
+        display: block; }
+
+/*--------------Propriedades básicas-----------------------*/
+.secao{
+    border-color: #e7eae0a2;
+    background-color: #222430;
+    margin-top: 2vh;
+    margin-bottom: 2vh;}
+    .subS-inline{
+        display: inline; }
+    .subS-inlineBlock{
+        display: inline-block; }
+
+/*--------------Layout Flexbox-----------------------*/
+.flexboxMain{
+    border-color: rgb(209, 189, 72);
+    background-color: #2D2F3F; } 
+    .flexboxConteiner{
+        display: flex;
+        flex-wrap: wrap;}
+        .artigoFlex{
+            flex: 200px;
+            background-color: #e0e0d9;
+            color: #191A1B;
+            border-color: #393b39; }
+            
+/*-----------------Layout Grid------------------------*/
+.gridMain{
+    border-color: #4CB064; 
+    background-color: #2D2F3F; }
+    .gridConteiner{
+        display: grid;
+        grid-template-columns: repeat(3, 10vw); /*Repetindo os mesmos valores 3 vezes*/
+        grid-template-rows: repeat(3, 10vw);
+        justify-content: center;}
+    .gridConteiner > article{
+        border-color: #393b39;
+        background-color: #e0e0d9;
+        color: #191A1B; }
+            #caixa1{
+            background-color: #E2CFFF ;}  /* Deve existir uma maneira mais */
+            #caixa2{                        /* inteligente de se fazer isso  */
+            background-color: #D59DFF ;}
+            #caixa3{
+            background-color: #BA60FF ;}
+            #caixa4{
+            background-color: #D8FFEB ;}
+            #caixa5{
+            background-color: #74FFB8 ;}
+            #caixa6{
+            background-color: #49FFA2 ;}
+            #caixa7{
+            background-color: #E4E4E4 ;}
+            #caixa8{
+            background-color: #A8A8A8 ;}
+            #caixa9{
+            background-color: #7E7E7E ;}
+/*-----------------Lista de propriedades---------------------*/
+.gridConteiner2{
+    display: grid;
+    margin: 3%;
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+    justify-content: center; 
+    grid-template-areas: 'A A A A A'     /* Aqui eu literalmente desenhei uma */
+                         'B B C C C'     /* planta de como quero que fique na grade. */
+                         'D D D E E'; }  /* Isso é lindo */
+    .gridConteiner2 > article{
+        background-color: #e0e0d9;
+        color: #191A1B; }
+            #caixaA{
+            grid-area: A; } /*Identificação para usar no 'template-areas' */
+            #caixaB{
+            grid-area: B; }
+            #caixaC{
+            grid-area: C; }
+            #caixaD{
+            grid-area: D; }
+            #caixaE{
+            grid-area: E; }
+                                            

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Excel de pobre</title>
+</head>
+
+<body bgcolor="#f8f8f2">
+    
+    <h1><font color="#bd93f9">Introdução às tabelas</font></h1>
+    <i>"Tabelas são compostas por linhas, dentro das quais são colocadas
+    células."</i><br>
+
+    <p>Em tabelas você define linhas e dentro de linhas você define colunas (células)</p>
+
+    <h3>Tabela 1</h3>
+    <!--Abra uma tabela com a tag <table>; para inserir linhas use <tr> e dentro das linhas
+        insera células "colunas" com <td> ou <th> -->
+
+    <table border="1"> <!--Atributo para definir uma borda-->
+        <tr> <!--Linha 1 da tabela-->
+            <td>&nbsp;</td> <!--&nbsp; "E no-break space?", cria um espaço em branco-->
+            <td>Célula 1</td> <!--<td> Cria uma célula padrão, <th> serve como título-->
+            <td>Célula 2</td>
+        </tr>
+        <tr> <!--Linha 2 da tabela-->
+            <th>Linha 1</th>
+            <td>Célula A</td>
+            <td>Célula B</td>
+        </tr>
+        <tr> <!--Linha 3 da tabela-->
+            <th>Linha 2</th>
+            <td>Célula C</td>
+            <td>Célula D</td>
+        </tr>
+        <tr> <!--Linha 4 da tabela, com imagem!-->
+            <th>Linha 3</th>
+            <td><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhotemoji.com%2Fimages%2Femoji%2Fj%2F1ic9lgu2vcqbj.png&f=1&nofb=1"
+                    alt=":)" width="60"></td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+
+    <h3>Tabela 2</h3>
+    <p>"Antigamente" usavam tabelas para criar seções dentro da página, 
+    usando elas como separadores:</p>
+
+    <table width="100%" height="50%" border="1">
+        <td>
+            The HTML table model allows authors to arrange data -- text,
+            preformatted text, images, links, forms, form fields, other
+            tables, etc. -- into rows and columns of cells.
+
+            Each table may have an associated caption (see the CAPTION element)
+            that provides a short description of the table's purpose. A longer 
+            description may also be provided (via the summary attribute) for 
+            the benefit of people using speech or Braille-based user agents.
+        </td>
+        <td>
+            Table rows may be grouped into a head, foot, and body sections, 
+            (via the THEAD, TFOOT and TBODY elements, respectively). Row groups
+            convey additional structural information and may be rendered by user
+            agents in ways that emphasize this structure. User agents may exploit
+            the head/body/foot division to support scrolling of body sections
+            independently of the head and foot sections. When long tables are printed,
+            the head and foot information may be repeated on each page that contains table data.
+        </td>
+    </table>
+
+</body>
+
+
+</html>

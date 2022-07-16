@@ -1,0 +1,26 @@
+body{
+   font: 12pt Arial, Aktinson Hyperlegible;
+   display: grid;
+   grid-template-columns: 50vw;
+   justify-content: center;
+}
+
+select, button{
+   font: inherit;
+   padding: 5px;
+}
+
+fieldset{
+   border: 2px solid #0808088a;
+   justify-self: center;
+}
+
+p{
+   background-color: rgb(223, 212, 58);
+   padding: 20px;
+   border-radius: 5px; }
+   #norte{ background-color: #4fe04f; }
+   #nordeste{ background-color: #e2b51f; }
+   #centro{ background-color: #eb5e75; }
+   #sudeste{ background-color: #6fd4f3; }
+   #sul{ background-color: #9867f1; }

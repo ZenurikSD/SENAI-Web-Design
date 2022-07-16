@@ -1,0 +1,88 @@
+/*=========== Aparência geral =================*/
+html{ background-color: #252525; }
+body{
+	font: 12pt Cascadia Code, Lucida Console, monospace;
+	color: #e5ece5;
+	/*Grid*/
+	display: grid;
+	grid-template-columns: 80vw;
+	justify-content: center; }
+
+/*---------Elementos-------------*/
+h1, h2, h3, h4{ margin: 12px 0; }
+.subtitulo{ margin-bottom: 24px;}
+
+fieldset{ width: min-content; }
+
+button{
+	background-color: #3c3f3f; }
+button:hover, input:hover{
+	background-color: #4d5050; }
+
+input, button{
+	margin: 12px;
+	color: #e5ece5;
+	background-color: #14181b;
+	font: inherit;
+	padding: 4px;
+}
+
+li{
+	margin: 0 16px;
+	opacity: 0.70;
+}
+
+a{ color: #3a94af; text-decoration: none; }
+a:hover{ color: #51bdb8 ;}
+
+blockquote{
+	background-color: unset;
+	padding: 3% 4vw;
+	margin: 2vmin;
+	width: fit-content;
+}
+	.folha{
+		border: 4px solid #787a7c;
+		background-color: #f1f1ef;
+		color: #252525;
+		padding: 1vh 2vw;
+		margin: 3px;
+	}
+
+/*----------- Itens ----------------*/
+.cards{
+	display: flex; 
+	flex-direction: column;
+	justify-content: center; 
+	align-self: center;
+	background-color: #2f3131;
+	box-shadow: 0 0 16px #0000006c;
+	border-radius: 8px;
+	padding: 12px; 
+	margin: 6px 0;}
+	.cardsAlt{
+		background-color: #3f424d;
+		opacity: 0.70;}
+
+.borda_1{
+	border: 3px solid #5180bd; }
+.linha_1{
+	border: unset;
+	border-radius: 3px;
+	border-bottom: 2px solid #5180bd; }
+
+.colorido{
+	color: #5bc0df;
+}
+		
+
+#endCriado{
+	color: #51bdb8; }
+
+#voltar{
+	width: min-content;
+	align-self: center; }
+
+
+
+/*Meu CSS tá uma bagunça, não estou tendo tempo para trabalhar melhor nele.*/

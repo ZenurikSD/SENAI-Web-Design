@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" async></script>
+	
+	<title>Alisson Silva</title>
+</head>
+
+<body>
+	<!--Header ===================================== -->
+	<header class="header flex_row">
+	<nav>
+	<picture class="flex_row menu" onpointerover="mouse_exibir(this)" onpointerout="mouse_ocultar(this)">
+		<img src="menu_white_36dp.svg" alt="menu">
+		
+		<span class="drop_content flex_row">
+			<a href="index.html"> Home</a>
+		</span>
+	</picture>
+	</nav>
+	
+	<h2 class="tit">24/11 AULA 44 - Página alternativa</h2>
+	</header>
+	
+	<!--Principal ===================================== -->
+	<main class="mainContainer">
+	<h3>Animações CSS - Transform e Transition</h3>
+	<p>Mais caixas:</p>
+	<section class="cxContainer flex_row_wrap">
+		<div class="caixas_2" onpointerover="ativar(this)" onpointerout="desativar(this)"></div>
+		<div class="caixas_2" onpointerover="ativar(this)" onpointerout="desativar(this)"></div>
+		<div class="caixas_2" onpointerover="ativar(this)" onclick="ativar_txt(this)">
+			<p class="texto">Essa div tem um texto oculto</p>			
+		</div>
+		<div class="caixas_2" onpointerover="ativar(this)" onpointerout="desativar(this)"></div>
+		<div class="caixas_2" onpointerover="ativar(this)" onpointerout="desativar(this)"></div>
+	</section>
+		
+	<section>	
+	<h3>Galeria de imagens?</h3>
+		<img class="imagens" Id="img_1">
+		<img class="imagens" Id="img_2">
+		<img class="imagens" Id="img_3">
+		<img class="imagens" Id="img_4">
+		<img class="imagens" Id="img_5">
+		<img class="imagens" Id="img_6">
+	</section>
+	
+
+	</main>
+	
+		<!--Rodapé ======================================= -->
+	<footer class="footer flex_row_wrap">
+		<article class="footer_info" id="mapa">
+		<h4>Mapa <em>fictício</em> do site</h4>
+		<ul>
+			<li>Home</li>
+			<li>Sobre</li>
+			<li>Outros</li>
+			<li>Aulas</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>???</li>
+		</ul>
+		</article>
+
+		<article class="footer_info" id="texto">
+			<h4>Mais texto para encher o espaço</h4>
+			<p> The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target. <br> 
+			Common targets are Element, or its children, Document, and Window, but the target may be any object that supports events (such as XMLHttpRequest). </p>
+		</article>
+	</footer>
+
+
+</body>

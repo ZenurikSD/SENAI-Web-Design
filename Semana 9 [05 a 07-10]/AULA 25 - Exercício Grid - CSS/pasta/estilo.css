@@ -1,0 +1,28 @@
+body{
+	font: 12pt Roboto, Arial;
+	margin: 0;
+	background-color: #F1F3F4;
+	/*=======Grid corpo========*/
+	display: grid;
+	grid-template-columns: 1fr 85vw 1fr;
+	grid-template-rows: 	 7% auto 10%;
+	grid-template-areas: 'H H H'
+											 '. M .'
+											 'F F F';
+}
+
+header{
+	color: #fcfcfc;
+	background-color: #512B58;
+	grid-area: H;
+}
+
+main{
+	background-color: inherit;
+	grid-area: M;
+}
+
+footer{
+	background-color: #2A7886;
+	grid-area: F;
+}

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.body{
+    display: grid;
+    grid-template-areas: 'h h h h h'
+                          'n n n n n'
+                          '. m m m .'
+                          'f f f f f';
+}
+
+header{
+    grid-area: h;
+}
+
+.logo{
+    font-size: 4.8rem;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+
+nav{
+    grid-area: n;
+}
+
+
+.menu_nav{
+   overflow: hidden;
+   background-color: black;
+
+}
+
+.form{
+    background-color: white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    border-radius: 20px;
+}
+fieldset{
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.menu_nav > a {
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 15px 18px;
+   text-decoration: none;
+   font-size: 18px;
+ }
+
+ .menu_nav a:hover {
+   background-color:white;
+   color: black;
+ }
+ 
+ .active {
+   background-color: green;
+   color: white;
+ }
+ 
+ .menu_nav .icon {
+   display: none;
+ }
+
+.container2{
+     width: 100%;
+     height: 100%;
+     animation: changeBackgroundImage 20s  infinite;
+     align-items: center;
+     text-align: center;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+}
+
+@keyframes changeBackgroundImage{
+    0%{
+        background-image:url(rio\ de\ janeiro.jpg);
+    }
+    25%{
+        background-image: url(fernando_de_noronha.jpg);
+    }
+    50%{
+        background-image: url(santa\ catarina.jpg);
+    }
+    75%{
+        background-image: url(chapa\ dos\ veadeiros.webp);
+    }
+    100%{
+        background-image: url(Vale-da-Lua.jpg);
+    }
+}
+
+footer{
+    grid-area: f;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;    
+}
+footer > p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.icons{
+    list-style: none;
+    margin: 3vw;
+    font-size: 18px;
+}
+a { color:white }
+
+label{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 18px;
+    height: 40px;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    font-size: 18px;
+    width: 80px;
+}
