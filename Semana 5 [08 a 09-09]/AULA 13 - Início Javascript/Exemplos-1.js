@@ -3,7 +3,7 @@ function minhaFuncao(){
     document.getElementById("demo").innerHTML = "Olá, Mundo externo!"
 }
 
-/*Eu posso modificar um elemento HTML de várias formas */
+/*Há várias maneiras de exibir a saída de um comando*/
 
 /*Usando .innerHTML */
 function outraFuncao(){
